@@ -12,10 +12,12 @@ function compareLists() {
     const outputSection = document.getElementById('outputSection');
   
     if (outputList.length === 0) {
-      outputElement1.innerHTML = `<p id="output1" >you don't have any unfollowerz</p>`;
-      outputSection.style.display = 'block'; // Display the output section
+      outputElement1.classList.add('has-text-success', 'has-background-dark', 'py-1', 'px-3')
+      outputElement1.innerText = `you don't have any unfollowerZ`;
+      outputElement2.innerText = `All the people you follow, is following you back!`;
+      outputSection.style.display = 'block';
     } else {
       outputElement1.innerText = outputList.join('\n');
-      outputSection.style.display = 'block'; // Display the output section
+      outputSection.style.display = 'block';
     }
   }

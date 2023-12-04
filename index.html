@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>unfollowZ | Find who is not following you on Instagram!</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <nav class="navbar is-danger" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="#">unfollowZ</a>
+      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Button 1</a>
+        <a class="navbar-item" href="#">Button 2</a>
+        <a class="navbar-item" href="#">Button 3</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MAIN -->
+  
+  <section class="section mt-6 mb-6 is-small has-text-centered">
+    <div class="is-flex is-justify-content-center">
+        <img class="image is-squared is-rounded" src="images/logo.png" alt="Profile Picture">
+    </div>
+    <h1 class="title is-2 has-text-centered">unfollowZ</h1>
+    <h2 class="subtitle">find who is not following you on Instagram!</h2>
+</section>
+
+  <section class="section">
+    <div class="container">
+      <h1 class="title has-text-centered">Paste your info here!</h1>
+      <div class="columns">
+        <div class="column">
+          <label for="followers">Followers</label>
+          <textarea id="followers" class="textarea" rows="4"></textarea>
+        </div>
+        <div class="column">
+          <label for="following">Following</label>
+          <textarea id="following" class="textarea" rows="4"></textarea>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column has-text-centered">
+          <button onclick="showOutput()" class="button is-primary">Compare Lists</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="columns is-justify-content-center">
+      <div class="columns has-text-centered" id="outputSection">
+          <div class="column">
+            <p id="output1"></p>
+            <p id="output2"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        under construction
+      </p>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>

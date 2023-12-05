@@ -7,38 +7,38 @@ function removeDate(list) {
 }
 
 function compareLists() {
-  const igSuffix = 'https://www.instagram.com/';
   const followers = document.getElementById('followers').value.split('\n').map(item => item.trim());
   const following = document.getElementById('following').value.split('\n').map(item => item.trim());
 
   const cleanFollowers = removeDate(followers);
-  const cleanFollowing = removeDate(following).map(item => item.includes(igSuffix) ? item : igSuffix + item);
+  const cleanFollowing = removeDate(following);
 
-  return cleanFollowing
-    .filter(item => !cleanFollowers.includes(item))
-    .sort();
+  return cleanFollowing.filter(item => !cleanFollowers.includes(item)).sort();
 }
   
 function showOutput() {
   const outputList = compareLists();
-  const outputElement1 = document.getElementById('output1');
-  const outputElement2 = document.getElementById('output2');
   const outputSection = document.getElementById('outputSection');
+  const output = document.querySelector('#output');
+
+  outputSection.scrollIntoView({ behavior: "smooth", block: "start" });
+  console.log(outputList);
   
-  outputSection.scrollIntoView({behavior: "smooth", block: "start"});
-
   if (outputList.length === 0) {
-
-      outputElement1.classList.remove('has-text-danger')
-      outputElement1.classList.add('has-text-success', 'has-background-dark', 'py-1', 'px-3', 'my-1')
-      outputElement1.innerText = `you don't have any unfollowerZ`;
-      outputElement2.innerText = `All the people you follow, is following you back!`;
-      outputSection.style.display = 'block';
+    const outputHTML = `
+      <p class="has-text-success has-background-dark py-1 px-3 mb-5">You don't have any unfollowerZ</p>
+      <p>All the people you follow are following you back!</p>
+    `;
+    output.innerHTML = outputHTML;
+    outputSection.style.display = 'block';
   } else {
-      outputElement1.classList.remove('has-text-success')
-      outputElement1.classList.add('has-text-danger', 'has-background-dark', 'py-1', 'px-3', 'my-1')
-      outputElement1.innerText = `you have unfollowerZ`;
-      outputElement2.innerText = outputList.join('\n')
-      outputSection.style.display = 'block';
+    let outputHTML = `<p class="has-text-danger has-background-dark py-1 px-3 mb-5">You have ${outputList.length} unfollowerZ</p>`;
+
+    outputList.forEach(user => {
+      outputHTML += `<a href="https://www.instagram.com/${user}" target="_blank">${user}</a><br>`;
+    });
+
+    output.innerHTML = outputHTML;
+    outputSection.style.display = 'block';
   }
 }

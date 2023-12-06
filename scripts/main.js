@@ -1,5 +1,12 @@
 function removeDate(list) {
-  const regex = /\b(?:[A-Z][a-z]{2}\s\d{1,2},\s\d{4},\s\d{1,2}:\d{2}\s(?:AM|PM)|Following|Accounts you choose to see content from)\b/g;
+  //lang words
+  const eng_words = 'Following|Accounts you choose to see content from';
+  const spa_words = 'Seguidos|Cuentas cuyo contenido eliges ver';
+
+  //regex and adding g flag
+  const regexPattern = `\\b(?:[A-Z][a-z]{2}\\s\\d{1,2},\\s\\d{4},\\s\\d{1,2}:\\d{2}\\s(?:AM|PM)|\\d{1,2}\\s[A-z][a-z]{2}.\\s\\d{4}\\s\\d{1,2}:\\d{1,2}|${eng_words}|${spa_words})\\b`;
+  const regex = new RegExp(regexPattern, 'g');
+
   return list.map(item => {
     const match = item.match(regex);
     return match ? item.replace(regex, '').trim() : item.trim();

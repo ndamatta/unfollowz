@@ -1,5 +1,7 @@
 #outputSection {display: none;}
 .cursive-title {font-family: 'Gochi Hand', cursive;}
+.has-border-radius-r {border-radius: 0 30px 0 0;}
+.has-border-radius-l {border-radius: 30px 0 0 0;}
 .subtitle {font-family: 'Zen Maru Gothic', serif;}
 .separator {
     border-top: 1px solid #4A4A4A;
@@ -10,5 +12,23 @@
 #output p {border-radius: 10px;}
 .success {border: 4px solid #48C78E;}
 .danger {border: 4px solid #F14668;}
-#listComparator {margin-top: 10rem;}
+.comparatorSeparator h1 {margin-top: 10rem;}
+.comparatorSeparator span {
+    padding: 1rem 2rem;
+    border-radius: 20px 20px 0 0;
+    border-top: 1.5px solid #F14668;
+}
+#listComparator {border-bottom: 2px solid #F14668; border-radius: 0px 0 50px 0;}
+#listComparator a {
+    color: #F14668;
+    font-size: 1rem;
+}
+#listComparator a:hover {
+    color: white;
+    text-decoration: underline;
+}
 .footer {margin-top: 6rem;}
+
+@media screen and (max-width: 380px) {
+    .comparatorSeparator h1 {font-size: 1.3rem;}
+}

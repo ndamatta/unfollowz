@@ -26,6 +26,7 @@ function compareLists() {
 function showOutput() {
   const outputList = compareLists();
   const outputSection = document.getElementById('outputSection');
+  const separator = document.querySelector('.separator');
   const output = document.querySelector('#output');
 
   outputSection.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -33,19 +34,21 @@ function showOutput() {
   
   if (outputList.length === 0) {
     const outputHTML = `
-      <p class="has-text-success has-background-dark py-1 px-3 mb-5">You don't have any unfollowerZ</p>
+      <p class="success has-text-weight-bold py-3 px-5 mb-5">You don't have any unfollowerZ</p>
       <p>All the people you follow are following you back!</p>
     `;
     output.innerHTML = outputHTML;
+    separator.style.display = 'block';
     outputSection.style.display = 'block';
   } else {
-    let outputHTML = `<p class="has-text-danger has-background-dark py-1 px-3 mb-5">You have ${outputList.length} unfollowerZ</p>`;
+    let outputHTML = `<p class="danger has-text-weight-bold has-text-danger py-3 px-5 mb-5">You have ${outputList.length} unfollowerZ</p>`;
 
     outputList.forEach(user => {
       outputHTML += `<a href="https://www.instagram.com/${user}" target="_blank">${user}</a><br>`;
     });
 
     output.innerHTML = outputHTML;
+    separator.style.display = 'block';
     outputSection.style.display = 'block';
   }
 }

@@ -1,4 +1,6 @@
 #outputSection {display: none;}
+.cursive-title {font-family: 'Gochi Hand', cursive;}
+.subtitle {font-family: 'Zen Maru Gothic', serif;}
 .separator {
     border-top: 1px solid #4A4A4A;
     width: 50%;

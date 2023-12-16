@@ -1,4 +1,12 @@
 #outputSection {display: none;}
-#output1 {border-radius: 10px;}
+.separator {
+    border-top: 1px solid #4A4A4A;
+    width: 50%;
+    margin: 0 auto;
+    display: none;
+}
+#output p {border-radius: 10px;}
+.success {border: 4px solid #48C78E;}
+.danger {border: 4px solid #F14668;}
 #listComparator {margin-top: 10rem;}
 .footer {margin-top: 6rem;}

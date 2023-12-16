@@ -1,3 +1,11 @@
+//BURGER BUTTON
+const burgerIcon = document.querySelector('#burger');
+const navbarMenu = document.querySelector('#nav-links');
+
+burgerIcon.addEventListener('click', () => {
+   navbarMenu.classList.toggle('is-active');
+})
+
 function removeDate(list) {
   //lang words
   const eng_words = 'Following|Accounts you choose to see content from';

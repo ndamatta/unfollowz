@@ -29,6 +29,8 @@
 }
 #listComparator textarea {border-left: 5px solid #F14668;}
 .footer {margin-top: 6rem;}
+.zoom {transition: transform .1s;}
+.zoom:hover {transform: scale(1.03);}
 
 @media screen and (max-width: 380px) {
     .comparatorSeparator h1 {font-size: 1.3rem;}

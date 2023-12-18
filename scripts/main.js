@@ -38,7 +38,6 @@ function showOutput() {
   const output = document.querySelector('#output');
 
   outputSection.scrollIntoView({ behavior: "smooth", block: "start" });
-  console.log(outputList);
   
   if (outputList.length === 0) {
     const outputHTML = `

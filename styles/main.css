@@ -9,6 +9,11 @@
     margin: 0 auto;
     display: none;
 }
+.howto-separator {
+    border-top: 5px solid #4A4A4A;
+    width: 10%;
+    margin: 1rem;
+}
 #output p {border-radius: 10px;}
 .success {border: 4px solid #48C78E;}
 .danger {border: 4px solid #F14668;}
@@ -18,6 +23,8 @@
     border-radius: 20px 20px 0 0;
     border-top: 1.5px solid #F14668;
 }
+#watchThisVideo {border-left: 7px solid #F14668; border-radius: 8px 0 0 8px;}
+#video iframe {width: 100%;}
 #listComparator {border-bottom: 2px solid #F14668; border-radius: 0px 0 50px 0;}
 #listComparator a {
     color: #F14668;

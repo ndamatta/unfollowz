@@ -28,7 +28,7 @@ function compareLists() {
   const cleanFollowers = removeDate(followers);
   const cleanFollowing = removeDate(following);
 
-  return cleanFollowing.filter(item => !cleanFollowers.includes(item)).sort();
+    return cleanFollowing.filter(item => !cleanFollowers.includes(item)).sort();
 }
   
 function showOutput() {
@@ -59,3 +59,5 @@ function showOutput() {
     outputSection.style.display = 'block';
   }
 }
+const findUnfollowerzBtn = document.querySelector('#findUnfollowerzBtn');
+findUnfollowerzBtn.addEventListener('click', function(){showOutput()})

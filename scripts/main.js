@@ -21,6 +21,16 @@ function removeDate(list) {
   });
 }
 
+function displayOutputElements(newOutput) {
+  const output = document.querySelector('#output');
+  const outputSection = document.getElementById('outputSection');
+  const separator = document.querySelector('.separator');
+
+  output.innerHTML = newOutput;
+  separator.style.display = 'block';
+  outputSection.style.display = 'block';
+}
+
 function compareLists() {
   const followers = document.getElementById('followers').value.split('\n').map(item => item.trim());
   const following = document.getElementById('following').value.split('\n').map(item => item.trim());
@@ -33,10 +43,6 @@ function compareLists() {
   
 function showOutput() {
   const outputList = compareLists();
-  const outputSection = document.getElementById('outputSection');
-  const separator = document.querySelector('.separator');
-  const output = document.querySelector('#output');
-
   outputSection.scrollIntoView({ behavior: "smooth", block: "start" });
   
   if (outputList.length === 0) {
@@ -44,19 +50,14 @@ function showOutput() {
       <p class="success has-text-weight-bold py-3 px-5 mb-5 animate__animated animate__bounceIn">You don't have any unfollowerZ</p>
       <p>All the people you follow are following you back!</p>
     `;
-    output.innerHTML = outputHTML;
-    separator.style.display = 'block';
-    outputSection.style.display = 'block';
+    displayOutputElements(outputHTML);
   } else {
     let outputHTML = `<p class="danger has-text-weight-bold has-text-danger py-3 px-5 mb-5 animate__animated animate__bounceIn">You have ${outputList.length} unfollowerZ</p>`;
 
     outputList.forEach(user => {
       outputHTML += `<a href="https://www.instagram.com/${user}" target="_blank">${user}</a><br>`;
     });
-
-    output.innerHTML = outputHTML;
-    separator.style.display = 'block';
-    outputSection.style.display = 'block';
+    displayOutputElements(outputHTML)
   }
 }
 const findUnfollowerzBtn = document.querySelector('#findUnfollowerzBtn');

@@ -23,7 +23,7 @@ function removeDate(list) {
 
 function displayOutputElements(newOutput) {
   const output = document.querySelector('#output');
-  const outputSection = document.getElementById('outputSection');
+  const outputSection = document.querySelector('#outputSection');
   const separator = document.querySelector('.separator');
 
   output.innerHTML = newOutput;
@@ -32,8 +32,8 @@ function displayOutputElements(newOutput) {
 }
 
 function compareLists() {
-  const followers = document.getElementById('followers').value.split('\n').map(item => item.trim());
-  const following = document.getElementById('following').value.split('\n').map(item => item.trim());
+  const followers = document.querySelector('#followers').value.split('\n').map(item => item.trim());
+  const following = document.querySelector('#following').value.split('\n').map(item => item.trim());
 
   const cleanFollowers = removeDate(followers);
   const cleanFollowing = removeDate(following);

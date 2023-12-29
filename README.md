@@ -17,4 +17,7 @@ Learn how:<br>
 👤 <a href="#">how to use the website.</a> <br>
 <br>
 🔧 under construction, be aware for news :)<br>
-📅 release: january 2024
+📅 release: january 2024<br>
+___
+unfollowZ is under a Non-Commercial NoDerivatives <a href="https://github.com/ndamatta/unfollowz/blob/main/LICENSE">License</a>.<br>
+©2024 | ndamatta

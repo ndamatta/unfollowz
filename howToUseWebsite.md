@@ -1,11 +1,11 @@
 # How to use unfollowZ:<br>
-<picture><img src="https://github.com/ndamatta/unfollowz/assets/105658793/ff980da6-a554-445f-acf9-0b86c7bb7217"></picture><br>
+<picture><img src="https://github.com/ndamatta/unfollowz/assets/105658793/ff980da6-a554-445f-acf9-0b86c7bb7217" alt="unfollowz banner with logo"></picture><br>
 <br>
 ⚠️ To find who is not following you back, you will need two files directly from Instagram.<br>
-If you don't have them, please go to <a href="#">how to download necessary info</a>.<br>
+If you don't have them, please go to <a href="https://github.com/ndamatta/unfollowz/blob/main/howToDownloadInfo.md">how to download necessary info</a>.<br>
 <br>
 ___
-[1] First of all, open the website <a href="#">unfollowZ</a>. Appreciate that good looking design haha.<br>
+[1] First of all, open the website <a href="https://ndamatta.github.io/unfollowz/">unfollowZ</a>. Appreciate that good looking design haha.<br>
 <br>
 <picture><img src="https://github.com/ndamatta/unfollowz/assets/105658793/ab52cc08-7e56-4069-9950-442bcf5980e9"></picture>
 <br>

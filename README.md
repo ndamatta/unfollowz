@@ -12,9 +12,9 @@ This open source website compares two lists (followers and following) to identif
 No third-party apps or unconventional process. Everything follows a straightforward process with a user-friendly design.
 <br>
 <br>
-Learn how:<br>
-📂 <a href="https://github.com/ndamatta/unfollowz/blob/main/howToDownloadInfo.md">how to download my info.</a> (8 steps)<br>
-👤 <a href="#">how to use the website.</a> <br>
+Learn how to...<br>
+📂 <a href="https://github.com/ndamatta/unfollowz/blob/main/howToDownloadInfo.md">download necessary info.</a> (8 steps)<br>
+👤 <a href="#">use unfollowZ.</a> <br>
 <br>
 🔧 under construction, be aware for news :)<br>
 📅 release: january 2024<br>

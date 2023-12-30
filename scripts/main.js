@@ -5,6 +5,15 @@ const navbarMenu = document.querySelector('#nav-links');
 burgerIcon.addEventListener('click', () => {
    navbarMenu.classList.toggle('is-active');
 })
+//HOW TO BUTTON
+const howtobtn = document.querySelector('#howtobtn');
+if (howtobtn) {
+  howtobtn.addEventListener("click", () => {
+    var url = "https://www.github.com/ndamatta";
+    window.open(url, "_blank");
+  });
+}
+
 
 function removeDate(list) {
   //lang words

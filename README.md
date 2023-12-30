@@ -16,7 +16,7 @@ No third-party apps or unconventional process. Everything follows a straightforw
 <br>
 Learn how to...<br>
 📂 <a href="https://github.com/ndamatta/unfollowz/blob/main/howToDownloadInfo.md">download necessary info.</a> (8 steps)<br>
-🌐 <a href="https://github.com/ndamatta/unfollowz/blob/main/howToUseWebsite.md">use unfollowZ.</a> <br>
+🌐 <a href="https://github.com/ndamatta/unfollowz/blob/main/howToUseWebsite.md">use unfollowZ.</a> (4 steps)<br>
 <br>
 ___
 Any correction or suggestion is welcome. You can start a pull request, and I will personally review it.<br>

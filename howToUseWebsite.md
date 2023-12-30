@@ -1,4 +1,4 @@
-# How to use unfollowZ:<br>
+# 👨🏻‍🏫 How to use unfollowZ:<br>
 <picture><img src="https://github.com/ndamatta/unfollowz/assets/105658793/ff980da6-a554-445f-acf9-0b86c7bb7217" alt="unfollowz banner with logo"></picture><br>
 <br>
 ⚠️ To find who is not following you back, you will need two files directly from Instagram.<br>

@@ -5,11 +5,12 @@ const navbarMenu = document.querySelector('#nav-links');
 burgerIcon.addEventListener('click', () => {
    navbarMenu.classList.toggle('is-active');
 })
+
 //HOW TO BUTTON
 const howtobtn = document.querySelector('#howtobtn');
 if (howtobtn) {
   howtobtn.addEventListener("click", () => {
-    var url = "https://www.github.com/ndamatta";
+    var url = "https://github.com/ndamatta/unfollowz/blob/main/howToDownloadInfo.md";
     window.open(url, "_blank");
   });
 }

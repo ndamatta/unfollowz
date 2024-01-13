@@ -9,10 +9,10 @@ Web para encontrar a quienes no te siguen en Instagram. | <a href="https://www.g
 Encontrar quién no te está siguiendo en Instagram nunca ha sido tan facil.<br>
 Dile adiós a navegar por sitios maliciosos o compartir tu información de login con webs y apps de terceros.<br>
 <br>
-👨🏻‍🏫 You will learn how to download a list of your followers and the people you follow, officially from Instagram to your personal email.<br>
-✔️ Then, this open source website compares those two lists to identify those who aren't following you back. It generates links to the profiles of these accounts, allowing you to manually unfollow them.<br>
+👨🏻‍🏫 Aprenderás como descargar una lista de tus seguidores y las personas que sigues, la cual se enviará oficialmente de Instagram a tu correo personal.<br>
+✔️ Luego, con esta web open-source compara esas dos listas para identificar aquellos que no te siguen de vuelta. Generará links hacia los perfils de esas cuentas asi puedes entrar y dejar de seguirlos manualmente.<br>
 <br>
-🔒 No third-party apps or unconventional process. Everything follows a straightforward process with a user-friendly design.
+🔒 No hay apps de terceros o procesos / codigos raros. Todo es un proceso simple junto a una interfaz amigable.
 ___
 Learn how to...<br>
 📂 <a href="https://github.com/ndamatta/unfollowz/blob/main/howToDownloadInfo.md">download necessary info.</a> (8 steps)<br>

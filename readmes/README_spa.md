@@ -14,10 +14,10 @@ Dile adiós a navegar por sitios maliciosos o compartir tu información de login
 <br>
 🔒 No hay apps de terceros o procesos / codigos raros. Todo es un proceso simple junto a una interfaz amigable.
 ___
-Learn how to...<br>
-📂 <a href="https://github.com/ndamatta/unfollowz/blob/main/howToDownloadInfo.md">download necessary info.</a> (8 steps)<br>
-🌐 <a href="https://github.com/ndamatta/unfollowz/blob/main/howToUseWebsite.md">use unfollowZ.</a> (4 steps)<br>
+Aprende cómo...<br>
+📂 <a href="https://github.com/ndamatta/unfollowz/blob/main/howToDownloadInfo.md">descargar información necesaria.</a> (8 pasos)<br>
+🌐 <a href="https://github.com/ndamatta/unfollowz/blob/main/howToUseWebsite.md">usar unfollowZ.</a> (4 pasos)<br>
 ___
-Any correction or suggestion is welcome. You can start a pull request, and I will personally review it.<br>
-unfollowZ is under a Non-Commercial NoDerivatives <a href="https://github.com/ndamatta/unfollowz/blob/main/LICENSE">License</a>.<br>
+Cualquier correción o sugerencia es bienvenida. Puedes crear un pull request, yo lo revisaré personalmente.<br>
+unfollowZ está bajo una licencia No-Comercial Sin-Derivativos <a href="https://github.com/ndamatta/unfollowz/blob/main/LICENSE">Licencia</a>.<br>
 ©2024 | ndamatta

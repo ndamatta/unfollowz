@@ -10,7 +10,7 @@ Encontrar quién no te está siguiendo en Instagram nunca ha sido tan facil.<br>
 Dile adiós a navegar por sitios maliciosos o compartir tu información de login con webs y apps de terceros.<br>
 <br>
 👨🏻‍🏫 Aprenderás como descargar una lista de tus seguidores y las personas que sigues, la cual se enviará oficialmente de Instagram a tu correo personal.<br>
-✔️ Luego, con esta web open-source compara esas dos listas para identificar aquellos que no te siguen de vuelta. Generará links hacia los perfils de esas cuentas asi puedes entrar y dejar de seguirlos manualmente.<br>
+✔️ Luego, con esta web open-source, compara esas dos listas para identificar aquellos que no te siguen de vuelta. Se generarán links hacia los perfiles de esas cuentas asi puedes visitarlos y dejar de seguirlos manualmente.<br>
 <br>
 🔒 No hay apps de terceros o procesos / codigos raros. Todo es un proceso simple junto a una interfaz amigable.
 ___

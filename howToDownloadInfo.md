@@ -3,6 +3,8 @@
 <br>
 Assuming you already have your Instagram account set up, let's begin with the steps to request and download your followers' and following information, which will be sent directly from Instagram to your email.<br>
 <br>
+🛈 Instagram or Meta might change the buttons or sections, making the tutorial not 100% accurate, depending on when you're viewing this. However, you can follow the similarities and it will be the same<br>
+<br>
 Follow these 9 steps...
 ___
 [1] Once logged in in your Instagram, go to `Settings` -> `Account Center`<br>

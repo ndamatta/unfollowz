@@ -12,15 +12,15 @@ ___
 Finding who isn't following you on Instagram has never been easier.<br>
 Say goodbye to navigating phishy websites or sharing your login details with third-party apps.<br>
 <br>
-👨🏻‍🏫 You will learn how to download a list of your followers and the people you follow, officially from Instagram to your personal email.<br>
+👨🏻‍🏫 You will learn how to request and download a list of your followers and the people you follow, officially from Instagram to your personal email.<br>
 ✔️ Then, this open source website compares those two lists to identify those who aren't following you back. It generates links to the profiles of these accounts, allowing you to manually unfollow them.<br>
 <br>
 🔒 No third-party apps or unconventional process. Everything follows a straightforward process with a user-friendly design.
 ___
 Learn how to...<br>
-📂 <a href="https://github.com/ndamatta/unfollowz/blob/main/howToDownloadInfo.md">download necessary info.</a> (8 steps)<br>
+📂 <a href="https://github.com/ndamatta/unfollowz/blob/main/howToDownloadInfo.md">request and download followers info.</a> (8 steps)<br>
 🌐 <a href="https://github.com/ndamatta/unfollowz/blob/main/howToUseWebsite.md">use unfollowZ.</a> (4 steps)<br>
 ___
-Any correction or suggestion is welcome. You can start a pull request, and I will personally review it.<br>
-unfollowZ is under a Non-Commercial NoDerivatives <a href="https://github.com/ndamatta/unfollowz/blob/main/LICENSE">License</a>.<br>
-©2024 | ndamatta
+🛈 Any correction or suggestion is welcome. You can start a pull request, and I will personally review it.<br>
+🛈 unfollowZ is under a Non-Commercial NoDerivatives <a href="https://github.com/ndamatta/unfollowz/blob/main/LICENSE">License</a>.<br>
+ ©2024 | ndamatta

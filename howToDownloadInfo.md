@@ -1,7 +1,7 @@
-# 👨🏻‍🏫 How to download my followers' and following information:<br>
+# 👨🏻‍🏫 How to request and download my followers' and following information:<br>
 <picture><img src="https://github.com/ndamatta/unfollowz/assets/105658793/ff980da6-a554-445f-acf9-0b86c7bb7217"></picture><br>
 <br>
-Assuming you already have your Instagram account set up, let's begin with the steps to download your followers' and following information, which will be sent directly from Instagram to your email.<br>
+Assuming you already have your Instagram account set up, let's begin with the steps to request and download your followers' and following information, which will be sent directly from Instagram to your email.<br>
 <br>
 Follow these 9 steps...
 ___

@@ -1,5 +1,5 @@
 # unfollowZ<br> 
-Website to find who is not following you back on Instagram. | <a href="https://www.github.com/ndamatta">@ndamatta</a><br>
+A simple and reliable website to find who is not following you back on Instagram. | <a href="https://www.github.com/ndamatta">@ndamatta</a><br>
 <br>
 <picture><img src="https://github.com/ndamatta/unfollowz/assets/105658793/ff980da6-a554-445f-acf9-0b86c7bb7217" alt="unfollowerz banner logo"></picture><br>
 <a href="https://www.linkedin.com/in/natanael-damatta/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="Linkedin Logo"></a> <a href="https://www.buymeacoffee.com/ndamatta"><img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" alt="buy me a coffe badge"></a>

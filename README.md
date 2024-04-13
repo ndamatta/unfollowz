@@ -21,6 +21,6 @@ Learn how to...<br>
 📂 <a href="https://github.com/ndamatta/unfollowz/blob/main/howToDownloadInfo.md">request and download followers info.</a> (8 steps)<br>
 🌐 <a href="https://github.com/ndamatta/unfollowz/blob/main/howToUseWebsite.md">use unfollowZ.</a> (4 steps)<br>
 ___
-🛈 Any correction or suggestion is welcome. You can start a pull request, and I will personally review it.<br>
+🛈 Any correction or suggestion is welcome. You can create a pull request, and I will personally review and merge it.<br>
 🛈 unfollowZ is under a Non-Commercial NoDerivatives <a href="https://github.com/ndamatta/unfollowz/blob/main/LICENSE">License</a>.<br>
  ©2024 | ndamatta

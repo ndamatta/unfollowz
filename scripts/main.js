@@ -16,18 +16,13 @@ if (howtobtn) {
 }
 
 
-function removeDate(list) {
-  //lang words
-  const eng_words = 'Following|Accounts you choose to see content from';
-  const spa_words = 'Seguidos|Cuentas cuyo contenido eliges ver';
-
-  //regex and adding g flag
-  const regexPattern = `\\b(?:[A-Z][a-z]{2}\\s\\d{1,2},\\s\\d{4},\\s\\d{1,2}:\\d{2}\\s(?:AM|PM)|\\d{1,2}\\s[A-z][a-z]{2}.\\s\\d{4}\\s\\d{1,2}:\\d{1,2}|${eng_words}|${spa_words})\\b`;
-  const regex = new RegExp(regexPattern, 'g');
+function extractUsername(list) {
+  const usernameRegex = /\b(?!Following|Profiles)[a-zA-Z0-9._]+\b/;
 
   return list.map(item => {
-    const match = item.match(regex);
-    return match ? item.replace(regex, '').trim() : item.trim();
+    // Match the username
+    const match = item.match(usernameRegex);
+    return match ? match[0] : '';
   });
 }
 
@@ -45,8 +40,8 @@ function compareLists() {
   const followers = document.querySelector('#followers').value.split('\n').map(item => item.trim());
   const following = document.querySelector('#following').value.split('\n').map(item => item.trim());
 
-  const cleanFollowers = removeDate(followers);
-  const cleanFollowing = removeDate(following);
+  const cleanFollowers = extractUsername(followers);
+  const cleanFollowing = extractUsername(following);
 
     return cleanFollowing.filter(item => !cleanFollowers.includes(item)).sort();
 }

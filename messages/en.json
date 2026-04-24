@@ -1,0 +1,10 @@
+{
+    "HomePage": {
+        "title": "Test title",
+        "description": "this is a test description"
+    },
+    "Test": {
+        "title": "Test title for test page",
+        "description": "this is a test description for test page"
+    }
+}

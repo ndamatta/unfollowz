@@ -1,0 +1,10 @@
+{
+    "HomePage": {
+        "title": "Titulo de Prueba",
+        "description": "Descripcion de prueba"
+    },
+    "Test": {
+        "title": "Titulo de la Pagina de Prueba",
+        "description": "Descripcion de la pagina de prueba"
+    }
+}

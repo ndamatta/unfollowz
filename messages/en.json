@@ -1,10 +1,15 @@
 {
-    "HomePage": {
+    "Header": {
+        "home": "Home",
+        "how-it-works": "How it works",
+        "about": "About"
+    },
+    "Home": {
         "title": "Test title",
         "description": "this is a test description"
     },
-    "Test": {
-        "title": "Test title for test page",
-        "description": "this is a test description for test page"
+    "HowItWorks": {
+        "title": "Test title for how it works",
+        "description": "this is a test description for how it works"
     }
 }

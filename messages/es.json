@@ -1,10 +1,15 @@
 {
-    "HomePage": {
+    "Header": {
+        "home": "Inicio",
+        "how-it-works": "Como Funciona",
+        "about": "Acerca de"
+    },
+    "Home": {
         "title": "Titulo de Prueba",
         "description": "Descripcion de prueba"
     },
-    "Test": {
-        "title": "Titulo de la Pagina de Prueba",
-        "description": "Descripcion de la pagina de prueba"
+    "HowItWorks": {
+        "title": "Titulo de Como funciona",
+        "description": "Descripcion de prueba como funciona"
     }
 }

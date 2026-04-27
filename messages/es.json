@@ -11,5 +11,9 @@
     "HowItWorks": {
         "title": "Titulo de Como funciona",
         "description": "Descripcion de prueba como funciona"
+    },
+    "About": {
+        "title": "Titulo de Acerca de",
+        "description": "Descripcion de prueba acerca de"
     }
 }

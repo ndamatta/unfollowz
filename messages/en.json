@@ -11,5 +11,9 @@
     "HowItWorks": {
         "title": "Test title for how it works",
         "description": "this is a test description for how it works"
+    },
+    "About": {
+        "title": "Test title for about",
+        "description": "this is a test description for about"
     }
 }

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter, Rubik_Glitch } from 'next/font/google'
 import "../globals.css";
 import { NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
@@ -7,14 +7,13 @@ import { hasLocale } from "next-intl";
 import { routing } from "../../i18n/routing";
 import { setRequestLocale, getMessages } from "next-intl/server";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const rubik_glitch = Rubik_Glitch({
   subsets: ["latin"],
+  weight: "400",
 });
 
 export const metadata: Metadata = {
@@ -39,7 +38,7 @@ export default async function RootLayout({ children, params }: Props) {
   const messages = await getMessages();
 
   return (
-    <html lang= {locale}>
+    <html lang= {locale} className={inter.className}>
       <body className="min-h-full flex flex-col">
         <NextIntlClientProvider messages={messages}>
         {children}

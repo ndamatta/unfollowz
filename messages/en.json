@@ -15,5 +15,9 @@
     "About": {
         "title": "Test title for about",
         "description": "this is a test description for about"
+    },
+    "Footer": {
+        "home": "Home",
+        "about": "About"
     }
 }

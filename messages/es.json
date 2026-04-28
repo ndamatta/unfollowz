@@ -15,5 +15,9 @@
     "About": {
         "title": "Titulo de Acerca de",
         "description": "Descripcion de prueba acerca de"
+    },
+    "Footer": {
+        "home": "Inicio",
+        "about": "Acerca de"
     }
 }

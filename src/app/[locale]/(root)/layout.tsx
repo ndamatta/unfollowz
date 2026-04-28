@@ -1,4 +1,5 @@
 import Header from '@/src/components/Header';
+import Footer from '@/src/components/Footer';
 
 export default async function RootLayout({
   children,
@@ -12,8 +13,8 @@ export default async function RootLayout({
   return (
     <div className='min-h-screen bg-slate-100 text-zinc-950'>
       <Header />
-
       <main className='container mx-auto'>{children}</main>
+      <Footer />
     </div>
   );
 }

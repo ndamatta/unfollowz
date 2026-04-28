@@ -5,7 +5,7 @@ export default async function Home({
 }: {
   params: { locale: string };
 }) {
-  const { locale } = params;
+  const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("Home");
 

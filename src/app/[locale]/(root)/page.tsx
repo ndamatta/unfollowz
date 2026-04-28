@@ -1,4 +1,5 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import CTA from "@/src/components/CTA";
 
 export default async function Home({
   params,
@@ -10,8 +11,6 @@ export default async function Home({
   const t = await getTranslations("Home");
 
   return (
-    <div className="bg-slate-500">
-      <h1>{t("title")}</h1>
-    </div>
+    <CTA />
   );
 }

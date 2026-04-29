@@ -5,8 +5,17 @@
         "about": "About"
     },
     "Home": {
-        "title": "Test title",
-        "description": "this is a test description"
+        "CTA": {
+            "p1": "Find who doesn't follow you back on Instagram",
+            "p2": "Open Source. No login. No external apps.",
+            "button": "Get Started"
+        },
+        "UploadGate": {
+            "title": "drag your file",
+            "p1": "To get started, you’ll need to download two files from Meta. Here's a step by step guide",
+            "p2": "It only takes about 5 minutes and can be done entirely by you. No external apps required.",
+            "p3": " Privacy first: All files are processed locally on your device. Nothing is uploaded, stored, or shared."
+        }
     },
     "HowItWorks": {
         "title": "Test title for how it works",

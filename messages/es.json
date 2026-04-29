@@ -5,8 +5,17 @@
         "about": "Acerca de"
     },
     "Home": {
-        "title": "Titulo de Prueba",
-        "description": "Descripcion de prueba"
+        "CTA": {
+            "p1": "Descubre quién no te sigue de vuelta en Instagram",
+            "p2": "Código abierto. Sin login. Sin apps externas.",
+            "button": "Comenzar"
+        },
+        "UploadGate": {
+            "title": "arrastra tus archivo",
+            "p1": "Para comenzar, necesitarás descargar dos archivos de Meta. Aquí tienes una guía paso a paso.",
+            "p2": "Solo toma unos 5 minutos y lo puedes hacer completamente tu mismo. No se requieren apps externas.",
+            "p3": "Privacidad primero: Todos los archivos se procesan localmente en tu dispositivo. Nada se sube, almacena ni comparte."
+        }
     },
     "HowItWorks": {
         "title": "Titulo de Como funciona",

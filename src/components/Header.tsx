@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Link } from '../i18n/navigations';
 import { SelectLanguage } from './SelectLanguage';
 import { getTranslations } from "next-intl/server";
@@ -6,23 +7,30 @@ export default async function Header() {
   const t = await getTranslations('Header');
 
   return (
-    <header className="bg-linear-to-l from-zinc-950 to-zinc-800">
-      <div className="max-w-7xl mx-auto flex items-center justify-between px-1 py-4">
+    <header className="w-full bg-linear-to-l from-zinc-950 to-zinc-800">
+      <div className="container mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8 py-3 sm:py-4">
 
         {/* logo */}
-        <div className="text-xl">
-          LogoHere
-        </div>
+        <Link href="/">
+          <Image
+            src="/logo.webp"
+            alt="unfollowz logo"
+            width={36}
+            height={36}
+            className="sm:w-10 sm:h-10"
+            priority
+          />
+        </Link>
 
         {/* nav */}
-        <nav className="flex items-center gap-5">
-          <Link href="/" className="text-base text-rose-400 px-2 py-1 rounded-xl hover:bg-rose-400 hover:text-zinc-950 hover:scale-105 hover:shadow-lg transition">
+        <nav className="flex items-center gap-2 sm:gap-4">
+          <Link href="/" className="text-sm sm:text-base text-rose-400 px-2 py-1 rounded-xl hover:bg-rose-400 hover:text-zinc-800 hover:scale-105 hover:shadow-md transition-all duration-200">
             {t("home")}
           </Link>
-          <Link href="/howitworks" className="text-base text-rose-400 px-2 py-1 rounded-xl hover:bg-rose-400 hover:text-zinc-950 hover:scale-105 hover:shadow-lg transition">
+          <Link href="/howitworks" className="text-sm sm:text-base text-rose-400 px-2 py-1 rounded-xl hover:bg-rose-400 hover:text-zinc-800 hover:scale-105 hover:shadow-md transition-all duration-200">
             {t("how-it-works")}
           </Link>
-          <Link href="/about" className="text-base text-rose-400 px-2 py-1 rounded-xl hover:bg-rose-400 hover:text-zinc-950 hover:scale-105 hover:shadow-lg transition">
+          <Link href="/about" className="text-sm sm:text-base text-rose-400 px-2 py-1 rounded-xl hover:bg-rose-400 hover:text-zinc-800 hover:scale-105 hover:shadow-md transition-all duration-200">
             {t("about")}
           </Link>
           <SelectLanguage />

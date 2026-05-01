@@ -9,7 +9,7 @@ export const SelectLanguage = () => {
     const currentLocale = useLocale();
 
     const changeLanguage = (newLocale: string) => {
-    const newPathname = pathName.replace(`/${currentLocale}`, `/${newLocale}`);
+    const newPathname = pathName.replace(new RegExp(`^/${currentLocale}`), `/${newLocale}`);
     router.push(newPathname);
     };
 

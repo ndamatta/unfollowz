@@ -1,32 +1,48 @@
 {
-    "Header": {
-        "home": "Home",
-        "how-it-works": "How it works",
-        "about": "About"
+  "Header": {
+    "home": "Home",
+    "how-it-works": "How it works",
+    "about": "About"
+  },
+  "Home": {
+    "CTA": {
+      "p1": "Find who doesn't follow you back on Instagram",
+      "p2": "Open Source. No login. No external apps.",
+      "button": "Get Started"
     },
-    "Home": {
-        "CTA": {
-            "p1": "Find who doesn't follow you back on Instagram",
-            "p2": "Open Source. No login. No external apps.",
-            "button": "Get Started"
-        },
-        "UploadGate": {
-            "title": "drag your file",
-            "p1": "To get started, you’ll need to download two files from Meta. Here's a step by step guide",
-            "p2": "It only takes about 5 minutes and can be done entirely by you. No external apps required.",
-            "p3": " Privacy first: All files are processed locally on your device. Nothing is uploaded, stored, or shared."
-        }
+    "Processor": {
+      "title": "drag your file",
+      "p1": "To get started, you’ll need to download two files from Meta. Here's a step by step guide",
+      "p2": "It only takes about 5 minutes and can be done entirely by you. No external apps required.",
+      "p3": " Privacy first: All files are processed locally on your device. Nothing is uploaded, stored, or shared.",
+      "error": "Error processing files. Please make sure you uploaded the correct files."
     },
-    "HowItWorks": {
-        "title": "Test title for how it works",
-        "description": "this is a test description for how it works"
+    "DropZonePair": {
+      "dropHere": "Drop the file here",
+      "instruction": "Drag & drop or ",
+      "browse": "browse",
+      "remove": "remove",
+      "button": "Process"
     },
-    "About": {
-        "title": "Test title for about",
-        "description": "this is a test description for about"
-    },
-    "Footer": {
-        "home": "Home",
-        "about": "About"
+    "ResultSection": {
+      "followers": "followers",
+      "notFollowingBack": "not following you back",
+      "following": "following",
+      "searchUser": "search user",
+      "seeProfile": "see profile",
+      "noResults": "no results found"
     }
+  },
+  "HowItWorks": {
+    "title": "Test title for how it works",
+    "description": "this is a test description for how it works"
+  },
+  "About": {
+    "title": "Test title for about",
+    "description": "this is a test description for about"
+  },
+  "Footer": {
+    "home": "Home",
+    "about": "About"
+  }
 }

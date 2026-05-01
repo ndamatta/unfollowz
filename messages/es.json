@@ -1,32 +1,48 @@
 {
-    "Header": {
-        "home": "Inicio",
-        "how-it-works": "Como Funciona",
-        "about": "Acerca de"
+  "Header": {
+    "home": "Inicio",
+    "how-it-works": "Como Funciona",
+    "about": "Acerca de"
+  },
+  "Home": {
+    "CTA": {
+      "p1": "Descubre quién no te sigue de vuelta en Instagram",
+      "p2": "Código abierto. Sin login. Sin apps externas.",
+      "button": "Comenzar"
     },
-    "Home": {
-        "CTA": {
-            "p1": "Descubre quién no te sigue de vuelta en Instagram",
-            "p2": "Código abierto. Sin login. Sin apps externas.",
-            "button": "Comenzar"
-        },
-        "UploadGate": {
-            "title": "arrastra tus archivo",
-            "p1": "Para comenzar, necesitarás descargar dos archivos de Meta. Aquí tienes una guía paso a paso.",
-            "p2": "Solo toma unos 5 minutos y lo puedes hacer completamente tu mismo. No se requieren apps externas.",
-            "p3": "Privacidad primero: Todos los archivos se procesan localmente en tu dispositivo. Nada se sube, almacena ni comparte."
-        }
+    "Processor": {
+      "title": "arrastra tus archivo",
+      "p1": "Para comenzar, necesitarás descargar dos archivos de Meta. Aquí tienes una guía paso a paso.",
+      "p2": "Solo toma unos 5 minutos y lo puedes hacer completamente tu mismo. No se requieren apps externas.",
+      "p3": "Privacidad primero: Todos los archivos se procesan localmente en tu dispositivo. Nada se sube, almacena ni comparte.",
+      "error": "Error al procesar los archivos. Por favor, asegúrate de subir los archivos correctos."
     },
-    "HowItWorks": {
-        "title": "Titulo de Como funciona",
-        "description": "Descripcion de prueba como funciona"
+    "DropZonePair": {
+      "dropHere": "Suelta el archivo aquí",
+      "instruction": "Arrastra y suelta o ",
+      "browse": "examinar",
+      "remove": "eliminar",
+      "button": "Procesar"
     },
-    "About": {
-        "title": "Titulo de Acerca de",
-        "description": "Descripcion de prueba acerca de"
-    },
-    "Footer": {
-        "home": "Inicio",
-        "about": "Acerca de"
+    "ResultSection": {
+      "followers": "seguidores",
+      "notFollowingBack": "no te siguen",
+      "following": "siguiendo",
+      "searchUser": "buscar usuario",
+      "seeProfile": "ver perfil",
+      "noResults": "no se encontraron resultados"
     }
+  },
+  "HowItWorks": {
+    "title": "Titulo de Como funciona",
+    "description": "Descripcion de prueba como funciona"
+  },
+  "About": {
+    "title": "Titulo de Acerca de",
+    "description": "Descripcion de prueba acerca de"
+  },
+  "Footer": {
+    "home": "Inicio",
+    "about": "Acerca de"
+  }
 }

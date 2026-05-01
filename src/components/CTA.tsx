@@ -30,9 +30,9 @@ export default async function CTA() {
       </p>
 
       {/* button */}
-      <button className="px-6 py-3 rounded-2xl bg-rose-400 text-slate-100 text-base sm:text-lg font-medium hover:scale-105 hover:text-zinc-950 transition">
+      <a href="#processor" className="px-6 py-3 rounded-2xl bg-rose-400 text-slate-100 text-base sm:text-lg font-medium hover:scale-105 hover:text-zinc-950 transition">
         {t("button")}
-      </button>
+      </a>
     </section>
   );
 }

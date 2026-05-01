@@ -1,6 +1,6 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import CTA from "@/src/components/CTA";
-import UploadGate from "@/src/components/UploadGate";
+import Processor from "@/src/components/Processor";
 
 export default async function Home({
   params,
@@ -14,7 +14,7 @@ export default async function Home({
   return (
     <>
     <CTA />
-    <UploadGate />  
+    <Processor />
     </>
   );
 }

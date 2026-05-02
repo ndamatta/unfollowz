@@ -26,9 +26,12 @@
     },
     "ResultSection": {
       "followers": "followers",
-      "notFollowingBack": "not following you back",
+      "notFollowingBack": "not following you",
       "following": "following",
       "searchUser": "search user",
+      "tableTitle": "list of unfollower",
+      "tablePrev": "Previous",
+      "tableNext": "Next",
       "seeProfile": "see profile",
       "noResults": "no results found"
     }

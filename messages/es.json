@@ -29,6 +29,9 @@
       "notFollowingBack": "no te siguen",
       "following": "siguiendo",
       "searchUser": "buscar usuario",
+      "tableTitle": "lista de unfollower",
+      "tablePrev": "Anterior",
+      "tableNext": "Siguiente",
       "seeProfile": "ver perfil",
       "noResults": "no se encontraron resultados"
     }

@@ -28,6 +28,7 @@ export default function Processor() {
   };
 
   return (
+    <>
     <section id="processor" className="w-full text-center bg-linear-to-b from-zinc-950 to-zinc-900">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 lg:py-12">
         <h1 className="text-2xl sm:text-3xl md:text-5xl text-slate-200 font-bold mb-6 -translate-y-1/5">
@@ -41,8 +42,12 @@ export default function Processor() {
         </div>
         <DropZonePair ref={dropRef} onBothReady={handleProcess} />
         {error && <p className="mt-6 text-sm text-red-500">{error}</p>}
-        {result && <ResultsSection result={result} />}
       </div>
     </section>
+
+    <section>
+        {result && <ResultsSection result={result} />}
+    </section>
+    </>
   );
 }

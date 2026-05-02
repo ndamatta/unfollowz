@@ -79,7 +79,7 @@ function UserList({ users }: { users: IGUser[] }) {
           <thead className="bg-zinc-800 text-slate-100 text-xs uppercase">
             <tr>
               <th colSpan={2} className="px-4 py-2 text-center">
-                {t("users")}
+                {t("tableTitle")}<span className="font-sketch text-rose-400 text-sm sm:text-sm md:text-sm">z</span>
               </th>
             </tr>
           </thead>
@@ -118,7 +118,7 @@ function UserList({ users }: { users: IGUser[] }) {
             disabled={currentPage === 1}
             className="px-3 py-1 rounded-md bg-zinc-800 border border-slate-600 disabled:opacity-50"
           >
-            Prev
+            {t("tablePrev")}
           </button>
 
           <span>
@@ -130,7 +130,7 @@ function UserList({ users }: { users: IGUser[] }) {
             disabled={currentPage === totalPages}
             className="px-3 py-1 rounded-md bg-zinc-800 border border-slate-600 disabled:opacity-50"
           >
-            Next
+            {t("tableNext")}
           </button>
         </div>
       )}

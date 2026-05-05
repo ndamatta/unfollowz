@@ -29,7 +29,7 @@ export default async function CTA() {
       </p>
 
       
-      <a className="px-6 py-3 rounded-2xl bg-rose-400 text-slate-100 text-base sm:text-lg font-medium hover:scale-105 hover:text-zinc-950 transition" href="#processor">  
+      <a className="px-6 py-3 rounded-2xl bg-zinc-900 text-slate-100 text-base sm:text-lg font-medium hover:bg-zinc-800 hover:border-rose-400 border transition-all duration-200" href="#processor">  
         {tActions("getStarted")}
       </a>
     </section>

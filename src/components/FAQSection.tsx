@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import { useTranslations } from "next-intl";
-import { Link } from '../i18n/navigations';
+import { Link } from "../i18n/navigations";
 
 type FAQItem = {
   q: string;
@@ -12,7 +12,7 @@ type FAQVariant = "flat" | "accordion";
 
 function FlatItem({ item }: { item: FAQItem }) {
   return (
-    <div className="bg-zinc-800 rounded-2xl p-3 border border-rose-400">
+    <div className="bg-zinc-900 rounded-2xl p-3 border border-rose-400">
       <h3 className="text-sm sm:text-base font-semibold text-slate-300">
         {item.q}
       </h3>
@@ -30,7 +30,7 @@ function AccordionItem({ item }: { item: FAQItem }) {
     <div className="border border-slate-700 rounded-xl overflow-hidden">
       <button
         onClick={() => setOpen((prev) => !prev)}
-        className="w-full flex items-center justify-between px-5 py-4 bg-zinc-800 text-left text-slate-200 text-sm sm:text-base font-medium hover:bg-zinc-700 transition-colors duration-200"
+        className="w-full flex items-center justify-between px-5 py-4 bg-zinc-900 text-left text-slate-100 text-sm sm:text-base font-medium hover:bg-linear-to-tr from-zinc-950 to-zinc-800 transition-colors duration-200"
       >
         <span>{item.q}</span>
         <span
@@ -40,7 +40,7 @@ function AccordionItem({ item }: { item: FAQItem }) {
         </span>
       </button>
       {open && (
-        <div className="px-5 py-4 bg-zinc-900 text-slate-400 text-xs sm:text-sm leading-relaxed">
+        <div className="px-5 py-4 bg-zinc-900 text-slate-200 text-xs sm:text-sm leading-relaxed border-rose-400 border-b">
           {item.a}
         </div>
       )}
@@ -51,14 +51,18 @@ function AccordionItem({ item }: { item: FAQItem }) {
 export default function FAQSection({
   items,
   variant,
+  subtitle,
+  cta,
 }: {
   items: FAQItem[];
   variant: FAQVariant;
+  subtitle: string;
+  cta: boolean;
 }) {
   const t = useTranslations("FAQ");
 
   return (
-    <section className="w-full bg-slate-100">
+    <section className="w-full bg-slate-100 my-10">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-0 my-20 max-w-2xl">
         <div className="text-center mb-6">
           <h2 className="text-1xl sm:text-3xl font-semibold text-zinc-900">
@@ -68,9 +72,7 @@ export default function FAQSection({
             </span>
           </h2>
 
-          <p className="text-sm sm:text-base text-zinc-700">
-            {t("subtitleHome")}
-          </p>
+          <p className="text-sm sm:text-base text-zinc-700">{subtitle}</p>
         </div>
 
         <div className="space-y-6">
@@ -83,15 +85,16 @@ export default function FAQSection({
           )}
         </div>
 
-        {/* CTA */}
-        <div className="text-center mt-6">
-          <Link
-            href="/howitworks"
-            className="text-sm sm:text-base text-zinc-900 hover:text-zinc-600 transition-colors duration-200"
-          >
-            More questions? See the full FAQ →
-          </Link>
-        </div>
+        {cta && (
+          <div className="text-center mt-6">
+            <Link
+              href="/howitworks"
+              className="text-sm sm:text-base text-zinc-900 hover:text-zinc-800 transition-colors duration-200"
+            >
+              More questions? See the full FAQ →
+            </Link>
+          </div>
+        )}
       </div>
     </section>
   );

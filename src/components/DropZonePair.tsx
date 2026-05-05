@@ -3,18 +3,14 @@ import { useState, forwardRef, useImperativeHandle } from "react";
 import { useDropzone } from "react-dropzone";
 import { useTranslations } from "next-intl";
 
-function DropSlot({
-  label,
-  file,
-  onDrop,
-  onRemove,
-}: {
+function DropSlot({ label, file, onDrop, onRemove }: {
   label: string;
   file: File | null;
   onDrop: (file: File) => void;
   onRemove: () => void;
 }) {
-  const t = useTranslations("Home.DropZonePair");
+  const t = useTranslations("home.dropzone");
+  const tActions = useTranslations("common.actions");
   const [error, setError] = useState<string | null>(null);
 
   const { getRootProps, getInputProps, isDragActive } = useDropzone({
@@ -60,14 +56,14 @@ function DropSlot({
             }}
             className="mt-3 text-xs text-red-400 hover:text-red-300 transition-colors duration-200"
           >
-            {t("remove")}
+            {tActions("remove")}
           </button>
         </>
       ) : (
         <>
           <p className="text-sm sm:text-base text-slate-300">
             {t("instruction")}{" "}
-            <span className="text-rose-400 underline">{t("browse")}</span>
+            <span className="text-rose-400 underline">{tActions("browse")}</span>
           </p>
           {error && <p className="mt-3 text-xs text-red-400">{error}</p>}
         </>
@@ -80,13 +76,10 @@ export interface DropZonePairRef {
   reset: () => void;
 }
 
-const DropZonePair = forwardRef<
-  DropZonePairRef,
-  {
-    onBothReady: (followers: File, following: File) => void;
-  }
->(({ onBothReady }, ref) => {
-  const t = useTranslations("Home.DropZonePair");
+const DropZonePair = forwardRef<DropZonePairRef, {
+  onBothReady: (followers: File, following: File) => void;
+}>(({ onBothReady }, ref) => {
+  const tActions = useTranslations("common.actions");
   const [followers, setFollowers] = useState<File | null>(null);
   const [following, setFollowing] = useState<File | null>(null);
 
@@ -122,14 +115,13 @@ const DropZonePair = forwardRef<
             if (followers && following) onBothReady(followers, following);
           }}
           className={`px-8 py-3 rounded-2xl text-base sm:text-lg font-medium transition-all duration-200
-            ${
-              bothReady
-                ? "bg-rose-400 text-slate-100 cursor-pointer hover:scale-105 hover:bg-rose-500 hover:text-zinc-950"
-                : "bg-slate-700 text-slate-500 cursor-not-allowed"
+            ${bothReady
+              ? "bg-rose-400 text-slate-100 cursor-pointer hover:scale-105 hover:bg-rose-500 hover:text-zinc-950"
+              : "bg-slate-700 text-slate-500 cursor-not-allowed"
             }
           `}
         >
-          {t("button")}
+          {tActions("process")}
         </button>
       </div>
     </div>

@@ -11,14 +11,14 @@ export default async function Home({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations();
-  const faqItems = t.raw("FAQ.Home");
+  const faqItems = t.raw("home.faq.items");
 
 
   return (
     <>
     <CTA />
     <Processor />
-    <FAQSection items={faqItems} variant="flat" />
+    <FAQSection items={faqItems} variant="flat" subtitle={t("home.faq.subtitle")} cta={true} />
     </>
   );
 }

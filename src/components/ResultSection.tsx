@@ -3,12 +3,8 @@ import { useState } from "react";
 import { IGUser, ProcessResult } from "@/src/lib/processFiles";
 import { useTranslations } from "next-intl";
 
-function StatsBar({
-  followingCount,
-  followersCount,
-  notFollowingBack,
-}: ProcessResult) {
-  const t = useTranslations("Home.ResultSection");
+function StatsBar({ followingCount, followersCount, notFollowingBack }: ProcessResult) {
+  const t = useTranslations("home.results");
 
   return (
     <div className="grid grid-cols-3 gap-5 sm:gap-6 mb-8">
@@ -21,7 +17,7 @@ function StatsBar({
         </span>
       </div>
 
-      <div className="flex flex-col items-center bg-zinc-800 rounded-2xl px-2 py-2 shadow-2xl">
+      <div className="flex flex-col items-center bg-zinc-800 rounded-2xl px-10 py-2 shadow-2xl">
         <span className="text-xl sm:text-3xl md:text-4xl font-bold text-rose-500">
           {notFollowingBack.length}
         </span>
@@ -43,7 +39,9 @@ function StatsBar({
 }
 
 function UserList({ users }: { users: IGUser[] }) {
-  const t = useTranslations("Home.ResultSection");
+  const t = useTranslations("home.results");
+  const tActions = useTranslations("common.actions");
+  const tStates = useTranslations("common.states");
 
   const [search, setSearch] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
@@ -51,21 +49,21 @@ function UserList({ users }: { users: IGUser[] }) {
   const ITEMS_PER_PAGE = 15;
 
   const filtered = users.filter((u) =>
-    u.username.toLowerCase().includes(search.toLowerCase()),
+    u.username.toLowerCase().includes(search.toLowerCase())
   );
 
   const totalPages = Math.ceil(filtered.length / ITEMS_PER_PAGE);
 
   const paginatedUsers = filtered.slice(
     (currentPage - 1) * ITEMS_PER_PAGE,
-    currentPage * ITEMS_PER_PAGE,
+    currentPage * ITEMS_PER_PAGE
   );
 
   return (
     <div className="mx-auto max-w-2xl">
       <input
         type="text"
-        placeholder={t("searchUser")}
+        placeholder={t("searchPlaceholder")}
         value={search}
         onChange={(e) => {
           setSearch(e.target.value);
@@ -79,7 +77,8 @@ function UserList({ users }: { users: IGUser[] }) {
           <thead className="bg-zinc-800 text-slate-100 text-xs uppercase">
             <tr>
               <th colSpan={2} className="px-4 py-2 text-center">
-                {t("tableTitle")}<span className="font-sketch text-rose-400 text-sm sm:text-sm md:text-sm">z</span>
+                {t("tableTitle")}
+                <span className="font-sketch text-rose-400 text-sm">z</span>
               </th>
             </tr>
           </thead>
@@ -95,7 +94,7 @@ function UserList({ users }: { users: IGUser[] }) {
                     rel="noopener noreferrer"
                     className="text-rose-400 hover:text-rose-300 transition-colors duration-200"
                   >
-                    {t("seeProfile")}
+                    {tActions("seeProfile")}
                   </a>
                 </td>
               </tr>
@@ -105,12 +104,11 @@ function UserList({ users }: { users: IGUser[] }) {
 
         {filtered.length === 0 && (
           <div className="text-sm text-slate-500 text-center py-6">
-            {t("noResults")}
+            {tStates("noResults")}
           </div>
         )}
       </div>
 
-      {/* Pagination */}
       {filtered.length > 0 && (
         <div className="flex items-center justify-between mt-4 text-sm text-slate-400">
           <button
@@ -118,19 +116,17 @@ function UserList({ users }: { users: IGUser[] }) {
             disabled={currentPage === 1}
             className="px-3 py-1 rounded-md bg-zinc-800 border border-slate-600 disabled:opacity-50"
           >
-            {t("tablePrev")}
+            {tActions("previous")}
           </button>
 
-          <span>
-            {currentPage} / {totalPages}
-          </span>
+          <span>{currentPage} / {totalPages}</span>
 
           <button
             onClick={() => setCurrentPage((p) => Math.min(p + 1, totalPages))}
             disabled={currentPage === totalPages}
             className="px-3 py-1 rounded-md bg-zinc-800 border border-slate-600 disabled:opacity-50"
           >
-            {t("tableNext")}
+            {tActions("next")}
           </button>
         </div>
       )}
@@ -139,12 +135,12 @@ function UserList({ users }: { users: IGUser[] }) {
 }
 
 export default function ResultsSection({ result }: { result: ProcessResult }) {
-  const t = useTranslations("Home.ResultSection");
+  const t = useTranslations("home.results");
 
   const hasNoUnfollowers = result.notFollowingBack.length === 0;
 
   return (
-    <section className="w-full bg-slate-100">
+    <section className="w-full">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-6 sm:pb-8 lg:pb-12">
         <StatsBar {...result} />
 

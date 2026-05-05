@@ -1,107 +1,137 @@
 {
-  "Header": {
-    "home": "Inicio",
-    "how-it-works": "Como Funciona",
-    "about": "Acerca de"
-  },
-  "Home": {
-    "CTA": {
-      "p1": "Descubre quién no te sigue de vuelta en Instagram",
-      "p2": "Código abierto. Sin login. Sin apps externas.",
-      "button": "Comenzar"
+  "common": {
+    "nav": {
+      "home": "Inicio",
+      "howItWorks": "Cómo funciona",
+      "about": "Acerca de"
     },
-    "Processor": {
-      "title": "arrastra tus archivo",
-      "p1": "Para comenzar, necesitarás descargar dos archivos de Meta. Aquí tienes una guía paso a paso.",
-      "p2": "Solo toma unos 5 minutos y lo puedes hacer completamente tu mismo. No se requieren apps externas.",
-      "p3": "Privacidad primero: Todos los archivos se procesan localmente en tu dispositivo. Nada se sube, almacena ni comparte.",
-      "error": "Error al procesar los archivos. Por favor, asegúrate de subir los archivos correctos."
+    "actions": {
+      "getStarted": "Comenzar",
+      "process": "Procesar",
+      "remove": "Eliminar",
+      "browse": "explorar",
+      "previous": "Anterior",
+      "next": "Siguiente",
+      "seeProfile": "Ver perfil"
     },
-    "DropZonePair": {
-      "dropHere": "Suelta el archivo aquí",
-      "instruction": "Arrastra y suelta o ",
-      "browse": "examinar",
-      "remove": "eliminar",
-      "button": "Procesar"
-    },
-    "ResultSection": {
-      "followers": "seguidores",
-      "notFollowingBack": "no te siguen",
-      "following": "siguiendo",
-      "searchUser": "buscar usuario",
-      "tableTitle": "lista de unfollower",
-      "tablePrev": "Anterior",
-      "tableNext": "Siguiente",
-      "seeProfile": "ver perfil",
-      "noResults": "no se encontraron resultados"
+    "states": {
+      "noResults": "No se encontraron resultados",
+      "loading": "Cargando..."
     }
   },
-  "FAQ": {
-    "subtitleHome": "Respuestas rápidas antes de comenzar",
-    "subtitleHowItWorks": "Como funciona",
-    "Home": [
+  "home": {
+    "cta": {
+      "headline": "Descubre quién no te sigue de vuelta en Instagram",
+      "subheadline": "Código abierto. Sin login. Sin apps externas."
+    },
+    "processor": {
+      "title": "Arrastra tu archivo",
+      "steps": "Para comenzar, necesitas descargar dos archivos desde Meta.",
+      "guide": "Aquí tienes una guía paso a paso",
+      "time": "Solo toma unos 5 minutos y puedes hacerlo completamente por tu cuenta. No se requieren apps externas.",
+      "privacy": "Privacidad ante todo: todos los archivos se procesan localmente en tu dispositivo. Nada se sube, almacena ni comparte.",
+      "error": "Error al procesar los archivos. Asegúrate de haber subido los archivos correctos."
+    },
+    "dropzone": {
+      "dropHere": "Suelta el archivo aquí",
+      "instruction": "Arrastra y suelta o",
+      "fileUploaded": "Archivo cargado",
+      "wrongFile": "Solo se aceptan archivos .json"
+    },
+    "results": {
+      "followers": "Seguidores",
+      "notFollowingBack": "No te siguen",
+      "following": "Siguiendo",
+      "searchPlaceholder": "Buscar usuario",
+      "tableTitle": "Lista de unfollower",
+      "noUnfollowers": "Todos los usuarios te siguen."
+    },
+    "faq": {
+      "subtitle": "Respuestas rápidas antes de comenzar",
+      "items": [
+        {
+          "q": "¿Es seguro usar esto?",
+          "a": "Sí. Todo se ejecuta localmente en tu navegador. Tus archivos nunca salen de tu dispositivo y no se suben, almacenan ni comparten."
+        },
+        {
+          "q": "¿Necesito mi contraseña de Instagram?",
+          "a": "No. No necesitas iniciar sesión ni conectar tu cuenta. Solo utilizas archivos que descargas directamente desde Meta."
+        },
+        {
+          "q": "¿Por qué necesito descargar archivos desde Meta?",
+          "a": "Instagram no proporciona esta información directamente. Al usar los datos exportados de tu cuenta, podemos comparar con precisión tus seguidores y a quién sigues."
+        },
+        {
+          "q": "¿Cuánto tiempo toma?",
+          "a": "Aproximadamente 5 minutos para solicitar y descargar tus datos desde Meta, y solo unos segundos para procesarlos aquí."
+        }
+      ]
+    }
+  },
+  "howItWorks": {
+    "title": "Cómo funciona",
+    "meta": "Sin inicio de sesión · Se ejecuta localmente · Toma menos de 5 minutos",
+    "steps": [
       {
-        "q": "¿Es seguro usar esto?",
-        "a": "Sí. Todo se ejecuta localmente en tu navegador. Tus archivos nunca salen de tu dispositivo, ni se suben, almacenan ni comparten."
+        "title": "Solicita tus datos a Meta",
+        "description": "Ve a la configuración de tu cuenta y solicita la exportación de tus datos. Esto suele tardar unos minutos."
       },
       {
-        "q": "¿Necesito mi contraseña de Instagram?",
-        "a": "No. No necesitás iniciar sesión ni conectar tu cuenta. Solo usas los archivos que descargaste directamente desde Meta."
+        "title": "Descarga los archivos de seguidores y seguidos",
+        "description": "Una vez listos, descarga tus datos y ubica los archivos de seguidores y seguidos."
       },
       {
-        "q": "¿Por qué tengo que descargar archivos desde Meta?",
-        "a": "Instagram no proporciona esta información directamente. Usando los datos exportados de tu cuenta, podemos comparar con precisión a quién sigues y quién te sigue."
-      },
-      {
-        "q": "¿Cuánto tarda?",
-        "a": "Alrededor de 5 minutos para solicitar y descargar tus datos desde Meta, y solo unos segundos para procesarlos aquí."
+        "title": "Súbelos y obtén tus resultados",
+        "description": "Sube los archivos en la herramienta y verás al instante quién no te sigue de vuelta."
       }
     ],
-    "HowItWorks": [
-      {
-        "q": "¿Qué archivos necesito exactamente?",
-        "a": "Necesitás los archivos de seguidores y seguidos de la exportación de tu cuenta de Meta. La guía paso a paso de arriba muestra exactamente dónde encontrarlos."
-      },
-      {
-        "q": "¿Por qué funciona este método?",
-        "a": "Los datos exportados incluyen listas completas de a quién sigues y quién te sigue. Comparando ambas listas localmente, podemos identificar quién no te sigue de vuelta."
-      },
-      {
-        "q": "¿En qué formato deben estar los archivos?",
-        "a": "La herramienta soporta los formatos por defecto de Meta (generalmente JSON o HTML). Solo descargalos como se indica en la guía."
-      },
-      {
-        "q": "¿Puedo usar esto en el celular?",
-        "a": "Sí, pero se recomienda usar una computadora para una experiencia más cómoda al descargar y subir los archivos."
-      },
-      {
-        "q": "¿Se envía alguno de mis datos a un servidor?",
-        "a": "No. Todo el procesamiento ocurre localmente en tu navegador. Tus datos permanecen en tu dispositivo en todo momento."
-      },
-      {
-        "q": "¿Pueden acceder a mi cuenta de Instagram?",
-        "a": "No. Esta herramienta no tiene acceso a tu cuenta. Solo lee los archivos que vos proporcionás manualmente."
-      },
-      {
-        "q": "¿Qué pasa si mis archivos no funcionan?",
-        "a": "Asegurate de haber descargado los archivos correctos desde Meta y de no haberlos modificado. Si el problema persiste, probá descargarlos nuevamente."
-      },
-      {
-        "q": "¿Por qué no usar una app para esto?",
-        "a": "La mayoría de las apps requieren acceso a tu cuenta. Esta herramienta evita eso completamente usando tus propios datos exportados, lo que la hace más segura y privada."
-      }
-    ]
+    "videoTitle": "Cómo funciona — video explicativo",
+    "faq": {
+      "subtitle": "¿Aún tienes dudas? Aquí tienes todo lo que necesitas saber.",
+      "items": [
+        {
+          "q": "¿Qué archivos necesito exactamente?",
+          "a": "Necesitas los archivos de seguidores y seguidos de la exportación de tu cuenta de Meta. La guía paso a paso de arriba muestra exactamente dónde encontrarlos."
+        },
+        {
+          "q": "¿Por qué funciona este método?",
+          "a": "Tus datos exportados incluyen listas completas de a quién sigues y quién te sigue. Al compararlas localmente, podemos identificar quién no te sigue de vuelta."
+        },
+        {
+          "q": "¿En qué formato deben estar los archivos?",
+          "a": "La herramienta soporta los formatos predeterminados de Meta (generalmente JSON o HTML). Solo descárgalos como se indica en la guía."
+        },
+        {
+          "q": "¿Puedo usar esto en el móvil?",
+          "a": "Sí, pero se recomienda usar una computadora para una experiencia más cómoda al descargar y subir los archivos."
+        },
+        {
+          "q": "¿Se envían mis datos a algún servidor?",
+          "a": "No. Todo el procesamiento ocurre localmente en tu navegador. Tus datos permanecen en tu dispositivo en todo momento."
+        },
+        {
+          "q": "¿Pueden acceder a mi cuenta de Instagram?",
+          "a": "No. Esta herramienta no tiene acceso a tu cuenta. Solo lee los archivos que proporcionas manualmente."
+        },
+        {
+          "q": "¿Qué pasa si mis archivos no funcionan?",
+          "a": "Asegúrate de haber descargado los archivos correctos desde Meta y de no haberlos modificado. Si el problema persiste, intenta descargarlos nuevamente."
+        },
+        {
+          "q": "¿Por qué no usar una app para esto?",
+          "a": "La mayoría de las apps requieren acceso a tu cuenta. Esta herramienta evita eso por completo al usar tus propios datos exportados, haciéndola más segura y privada."
+        }
+      ]
+    }
   },
-  "HowItWorks": {
-    "title": "Titulo de Como funciona",
-    "description": "Descripcion de prueba como funciona"
+  "about": {
+    "title": "Acerca de este proyecto",
+    "description": "Creado para ofrecer a los usuarios de Instagram una forma privada y sin inicio de sesión de ver quién no los sigue de vuelta."
   },
-  "About": {
-    "title": "Titulo de Acerca de",
-    "description": "Descripcion de prueba acerca de"
-  },
-  "Footer": {
-    "home": "Inicio",
-    "about": "Acerca de"
+  "footer": {
+    "links": {
+      "home": "Inicio",
+      "about": "Acerca de"
+    }
   }
 }

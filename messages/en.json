@@ -45,7 +45,6 @@
       "searchPlaceholder": "Search user",
       "tableTitle": "List of unfollowers",
       "noUnfollowers": "All users are following you."
-
     },
     "faq": {
       "subtitle": "Quick answers before you get started",
@@ -127,7 +126,35 @@
   },
   "about": {
     "title": "About this project",
-    "description": "Built to give Instagram users a private, no-login way to check who doesn't follow them back."
+    "description": "a simple way to check who doesn't follow you back.",
+    "sections": {
+      "what": {
+        "title": "About unfollowz",
+        "description": "unfollowz is a tool that helps you identify who doesn't follow you back on Instagram. It works by comparing two lists from your own exported Meta data: followers and following."
+      },
+      "privacy": {
+        "title": "Privacy first",
+        "description": "Your data never leaves your device. Everything runs locally in your browser. This means no uploads, no servers, and no third-party access.",
+        "points": {
+          "noLogin": "No login required",
+          "noAccess": "No access to your Instagram account",
+          "noStorage": "No data collection or storage"
+        }
+      },
+      "how": {
+        "title": "How it works",
+        "description": "Instagram doesn't show who doesn't follow you back. However, your exported data includes complete lists of your followers and who you follow. This tool compares both lists locally and calculates the difference to identify non followers."
+      },
+      "transparency": {
+        "title": "Transparency",
+        "description": "This project is designed to be simple and transparent. There is no tracking or unnecessary complexity.",
+        "warning": "If a tool asks for your password, you should question it."
+      }
+    },
+    "cta": {
+      "github": "View on GitHub",
+      "portfolio": "Visit my portfolio"
+    }
   },
   "footer": {
     "links": {

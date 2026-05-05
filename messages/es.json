@@ -125,8 +125,36 @@
     }
   },
   "about": {
-    "title": "Acerca de este proyecto",
-    "description": "Creado para ofrecer a los usuarios de Instagram una forma privada y sin inicio de sesión de ver quién no los sigue de vuelta."
+    "title": "Sobre este proyecto",
+    "description": "una forma simple de ver quién no te sigue.",
+    "sections": {
+      "what": {
+        "title": "Sobre unfollowz",
+        "description": "unfollowz es una herramienta que te ayuda a identificar quién no te sigue de vuelta en Instagram. Funciona comparando dos listas de los datos que exportas desde Meta: seguidores y seguidos."
+      },
+      "privacy": {
+        "title": "Privacidad primero",
+        "description": "Tus datos nunca salen de tu dispositivo. Todo se procesa localmente en tu navegador. Esto significa que no hay subidas, servidores ni acceso de terceros.",
+        "points": {
+          "noLogin": "No requiere inicio de sesión",
+          "noAccess": "Sin acceso a tu cuenta de Instagram",
+          "noStorage": "No se recopilan ni almacenan datos"
+        }
+      },
+      "how": {
+        "title": "Cómo funciona",
+        "description": "Instagram no muestra directamente quién no te sigue de vuelta. Sin embargo, tus datos exportados incluyen listas completas de tus seguidores y de a quién sigues. Esta herramienta compara ambas listas localmente y calcula la diferencia para identificar quién no te sigue."
+      },
+      "transparency": {
+        "title": "Transparencia",
+        "description": "Este proyecto está diseñado para ser simple y transparente. No hay seguimiento ni complejidad innecesaria.",
+        "warning": "Si una herramienta te pide tu contraseña, deberías cuestionarlo."
+      }
+    },
+    "cta": {
+      "github": "Ver en GitHub",
+      "portfolio": "Visitar mi portfolio"
+    }
   },
   "footer": {
     "links": {

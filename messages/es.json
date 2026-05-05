@@ -36,6 +36,62 @@
       "noResults": "no se encontraron resultados"
     }
   },
+  "FAQ": {
+    "subtitleHome": "Respuestas rápidas antes de comenzar",
+    "subtitleHowItWorks": "Como funciona",
+    "Home": [
+      {
+        "q": "¿Es seguro usar esto?",
+        "a": "Sí. Todo se ejecuta localmente en tu navegador. Tus archivos nunca salen de tu dispositivo, ni se suben, almacenan ni comparten."
+      },
+      {
+        "q": "¿Necesito mi contraseña de Instagram?",
+        "a": "No. No necesitás iniciar sesión ni conectar tu cuenta. Solo usas los archivos que descargaste directamente desde Meta."
+      },
+      {
+        "q": "¿Por qué tengo que descargar archivos desde Meta?",
+        "a": "Instagram no proporciona esta información directamente. Usando los datos exportados de tu cuenta, podemos comparar con precisión a quién sigues y quién te sigue."
+      },
+      {
+        "q": "¿Cuánto tarda?",
+        "a": "Alrededor de 5 minutos para solicitar y descargar tus datos desde Meta, y solo unos segundos para procesarlos aquí."
+      }
+    ],
+    "HowItWorks": [
+      {
+        "q": "¿Qué archivos necesito exactamente?",
+        "a": "Necesitás los archivos de seguidores y seguidos de la exportación de tu cuenta de Meta. La guía paso a paso de arriba muestra exactamente dónde encontrarlos."
+      },
+      {
+        "q": "¿Por qué funciona este método?",
+        "a": "Los datos exportados incluyen listas completas de a quién sigues y quién te sigue. Comparando ambas listas localmente, podemos identificar quién no te sigue de vuelta."
+      },
+      {
+        "q": "¿En qué formato deben estar los archivos?",
+        "a": "La herramienta soporta los formatos por defecto de Meta (generalmente JSON o HTML). Solo descargalos como se indica en la guía."
+      },
+      {
+        "q": "¿Puedo usar esto en el celular?",
+        "a": "Sí, pero se recomienda usar una computadora para una experiencia más cómoda al descargar y subir los archivos."
+      },
+      {
+        "q": "¿Se envía alguno de mis datos a un servidor?",
+        "a": "No. Todo el procesamiento ocurre localmente en tu navegador. Tus datos permanecen en tu dispositivo en todo momento."
+      },
+      {
+        "q": "¿Pueden acceder a mi cuenta de Instagram?",
+        "a": "No. Esta herramienta no tiene acceso a tu cuenta. Solo lee los archivos que vos proporcionás manualmente."
+      },
+      {
+        "q": "¿Qué pasa si mis archivos no funcionan?",
+        "a": "Asegurate de haber descargado los archivos correctos desde Meta y de no haberlos modificado. Si el problema persiste, probá descargarlos nuevamente."
+      },
+      {
+        "q": "¿Por qué no usar una app para esto?",
+        "a": "La mayoría de las apps requieren acceso a tu cuenta. Esta herramienta evita eso completamente usando tus propios datos exportados, lo que la hace más segura y privada."
+      }
+    ]
+  },
   "HowItWorks": {
     "title": "Titulo de Como funciona",
     "description": "Descripcion de prueba como funciona"

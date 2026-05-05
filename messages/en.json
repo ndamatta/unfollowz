@@ -44,6 +44,62 @@
     "title": "Test title for about",
     "description": "this is a test description for about"
   },
+  "FAQ": {
+    "subtitleHome": "Quick answers before you get started",
+    "subtitleHowItWorks": "How it works",
+    "Home": [
+      {
+        "q": "Is this safe to use?",
+        "a": "Yes. Everything runs locally in your browser. Your files never leave your device and are not uploaded, stored, or shared."
+      },
+      {
+        "q": "Do I need my Instagram password?",
+        "a": "No. You don’t need to log in or connect your account. You only use files that you download directly from Meta."
+      },
+      {
+        "q": "Why do I need to download files from Meta?",
+        "a": "Instagram doesn’t provide this information directly. By using your exported data, we can accurately compare your followers and following lists."
+      },
+      {
+        "q": "How long does it take?",
+        "a": "About 5 minutes to request and download your data from Meta, and just a few seconds to process it here."
+      }
+    ],
+    "HowItWorks": [
+      {
+        "q": "What files do I need exactly?",
+        "a": "You need the followers and following files from your Meta account export. The step-by-step guide above shows exactly where to find them."
+      },
+      {
+        "q": "Why does this method work?",
+        "a": "Your exported data includes complete lists of who you follow and who follows you. By comparing both lists locally, we can identify who doesn’t follow you back."
+      },
+      {
+        "q": "What format should the files be in?",
+        "a": "The tool supports the default formats provided by Meta (usually JSON or HTML). Just download them as instructed in the guide."
+      },
+      {
+        "q": "Can I use this on mobile?",
+        "a": "Yes, but using a desktop is recommended for a smoother experience when downloading and uploading files."
+      },
+      {
+        "q": "Is any of my data sent to a server?",
+        "a": "No. All processing happens locally in your browser. Your data stays on your device at all times."
+      },
+      {
+        "q": "Can you access my Instagram account?",
+        "a": "No. This tool has no access to your account. It only reads the files you manually provide."
+      },
+      {
+        "q": "What if my files don’t work?",
+        "a": "Make sure you downloaded the correct files from Meta and didn’t modify them. If the issue persists, try downloading them again."
+      },
+      {
+        "q": "Why not just use an app for this?",
+        "a": "Most apps require login access to your account. This tool avoids that completely by using your own exported data, making it safer and more private."
+      }
+    ]
+  },
   "Footer": {
     "home": "Home",
     "about": "About"

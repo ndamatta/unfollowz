@@ -38,7 +38,7 @@ export default function Processor() {
           </h1>
           <div className="text-center text-sm sm:text-base md:text-lg text-slate-100 max-w-[75ch] mx-auto mb-8 leading-relaxed">
             <p>{t("steps")}</p>
-            <Link className="hover:underline  hover:text-rose-400 transition duration-400" href="/howitworks">{t("guide")}<span className="font-bold text-rose-400">.</span> </Link>
+            <Link className="hover:underline hover:text-rose-400 transition duration-300" href="/howitworks">{t("guide")}<span className="font-bold text-rose-400">.</span> </Link>
             <p>{t("time")}</p>
             <p className="text-xs sm:text-sm text-red-400 mt-3">
               <span>ⓘ</span> {t("privacy")}

@@ -1,5 +1,4 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { Link } from "../../../../i18n/navigations";
 import Breadcrumb from "@/src/components/Breadcrumb";
 
 export default async function About({
@@ -89,23 +88,23 @@ export default async function About({
       {/* CTA */}
       <div className="text-center pb-16">
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <Link
+          <a
             href="https://github.com/ndamatta"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-2 rounded-xl bg-zinc-900 text-slate-100 text-sm sm:text-base font-medium border hover:bg-zinc-800 hover:border-rose-400 transition-all duration-200"
           >
             {t("about.cta.github")}
-          </Link>
+          </a>
 
-          <Link
+          <a
             href="https://www.ndamatta.com.ar"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-3 py-2 rounded-xl bg-slate-200 text-zinc-900 text-sm sm:text-base font-medium border border-slate-300 hover:bg-slate-300 transition-all duration-200"
           >
             {t("about.cta.portfolio")}
-          </Link>
+          </a>
         </div>
       </div>
     </div>

@@ -1,38 +1,19 @@
-import type { Metadata } from "next";
-import { Inter, Cabin_Sketch } from 'next/font/google'
-import "../globals.css";
-import { NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
 import { hasLocale } from "next-intl";
 import { routing } from "../../i18n/routing";
 import { setRequestLocale, getMessages } from "next-intl/server";
+import { NextIntlClientProvider } from "next-intl";
 
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-});
-
-const cabin_sketch = Cabin_Sketch({
-  subsets: ["latin"],
-  weight: "400",
-  variable: "--font-cabin-sketch",
-});
-
-export const metadata: Metadata = {
-  title: "unfollowz",
-  description: "Find who doesn't follow you back on Instagram. Open source. No login. No external apps.",
-};
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
+}
 
 type Props = {
   children: React.ReactNode;
   params: Promise<{ locale: string }>;
 };
 
-export function generateStaticParams() {
-  return routing.locales.map((locale) => ({ locale }));
-};
-
-export default async function RootLayout({ children, params }: Props) {
+export default async function LocaleLayout({ children, params }: Props) {
   const { locale } = await params;
 
   if (!hasLocale(routing.locales, locale)) return notFound();
@@ -41,12 +22,8 @@ export default async function RootLayout({ children, params }: Props) {
   const messages = await getMessages();
 
   return (
-    <html lang={locale} className={`${inter.variable} ${cabin_sketch.variable}`}>
-      <body className="min-h-full flex flex-col">
-        <NextIntlClientProvider messages={messages}>
-          {children}
-        </NextIntlClientProvider>
-      </body>
-    </html>
+    <NextIntlClientProvider messages={messages}>
+      {children}
+    </NextIntlClientProvider>
   );
 }

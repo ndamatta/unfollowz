@@ -48,6 +48,7 @@
     },
     "faq": {
       "subtitle": "Quick answers before you get started",
+      "cta": "More questions? See the full FAQ",
       "items": [
         {
           "q": "Is this safe to use?",
@@ -99,7 +100,7 @@
         },
         {
           "q": "What format should the files be in?",
-          "a": "The tool supports the default formats provided by Meta (usually JSON or HTML). Just download them as instructed in the guide."
+          "a": "The tool supports the JSON format provided by Meta. Just download the files as instructed in the guide."
         },
         {
           "q": "Can I use this on mobile?",

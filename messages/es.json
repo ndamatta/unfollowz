@@ -48,6 +48,7 @@
     },
     "faq": {
       "subtitle": "Respuestas rápidas antes de comenzar",
+      "cta": "¿Más preguntas? Aquí hay más respuestas.",
       "items": [
         {
           "q": "¿Es seguro usar esto?",
@@ -99,7 +100,7 @@
         },
         {
           "q": "¿En qué formato deben estar los archivos?",
-          "a": "La herramienta soporta los formatos predeterminados de Meta (generalmente JSON o HTML). Solo descárgalos como se indica en la guía."
+          "a": "La herramienta soporta el formato JSON proporcionado por Meta. Solo descarga los archivos como se indica en la guía."
         },
         {
           "q": "¿Puedo usar esto en el móvil?",

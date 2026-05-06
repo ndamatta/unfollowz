@@ -54,7 +54,7 @@ function DropSlot({ label, file, onDrop, onRemove }: {
               setError(null);
               onRemove();
             }}
-            className="mt-3 text-xs text-red-400 hover:text-red-300 transition-colors duration-200"
+            className="mt-3 text-xs text-red-500 hover:text-red-400 transition-colors duration-200"
           >
             {tActions("remove")}
           </button>
@@ -65,7 +65,7 @@ function DropSlot({ label, file, onDrop, onRemove }: {
             {t("instruction")}{" "}
             <span className="text-rose-400 underline">{tActions("browse")}</span>
           </p>
-          {error && <p className="mt-3 text-xs text-red-400">{error}</p>}
+          {error && <p className="mt-3 text-xs text-red-500">{error}</p>}
         </>
       )}
     </div>

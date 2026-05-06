@@ -1,10 +1,10 @@
 "use client";
 import { useState, useRef } from "react";
 import DropZonePair, { DropZonePairRef } from "./DropZonePair";
-import ResultsSection from "./ResultSection";
+import ResultsSection from "./ResultsSection";
 import { processFiles, ProcessResult } from "@/src/lib/processFiles";
 import { useTranslations } from "next-intl";
-import { Link } from "../i18n/navigations";
+import { Link } from "@/src/i18n/navigations";
 
 export default function Processor() {
   const t = useTranslations("home.processor");
@@ -40,7 +40,7 @@ export default function Processor() {
             <p>{t("steps")}</p>
             <Link className="hover:underline hover:text-rose-400 transition duration-300" href="/howitworks">{t("guide")}<span className="font-bold text-rose-400">.</span> </Link>
             <p>{t("time")}</p>
-            <p className="text-xs sm:text-sm text-red-400 mt-3">
+            <p className="text-xs sm:text-sm text-red-500 mt-3">
               <span>ⓘ</span> {t("privacy")}
             </p>
           </div>

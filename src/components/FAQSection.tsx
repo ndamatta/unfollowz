@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import { useTranslations } from "next-intl";
-import { Link } from "../i18n/navigations";
+import { Link } from "@/src/i18n/navigations";
 
 type FAQItem = {
   q: string;

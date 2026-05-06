@@ -1,10 +1,10 @@
 import Image from "next/image";
-import { Link } from '../i18n/navigations';
-import { SelectLanguage } from './SelectLanguage';
+import { Link } from "@/src/i18n/navigations";
+import SelectLanguage from "./SelectLanguage";
 import { getTranslations } from "next-intl/server";
 
 export default async function Header() {
-  const t = await getTranslations('common.nav');
+  const t = await getTranslations("common.nav");
 
   return (
     <header className="w-full bg-gradient-to-l from-zinc-950 to-zinc-800">

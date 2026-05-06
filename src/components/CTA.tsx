@@ -21,15 +21,15 @@ export default async function CTA() {
         unfollow<span className="font-sketch text-rose-400 text-6xl sm:text-7xl md:text-8xl">z</span>
       </h1>
 
-      <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-xl mb-2">
+      <p className="text-base sm:text-lg md:text-xl text-slate-600 max-w-xl mb-2">
         {t("headline")}
       </p>
-      <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-xl mb-8">
+      <p className="text-base sm:text-lg md:text-xl text-slate-600 max-w-xl mb-8">
         {t("subheadline")}
       </p>
 
-      
-      <a className="px-6 py-3 rounded-2xl bg-zinc-900 text-slate-100 text-base sm:text-lg font-medium hover:bg-zinc-800 hover:border-rose-400 border transition-all duration-200" href="#processor">  
+
+      <a className="px-6 py-3 rounded-2xl bg-zinc-900 text-slate-100 text-base sm:text-lg font-medium hover:bg-zinc-800 hover:border-rose-400 border transition-all duration-200" href="#processor">
         {tActions("getStarted")}
       </a>
     </section>

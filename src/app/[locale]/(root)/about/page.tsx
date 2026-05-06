@@ -13,7 +13,7 @@ export default async function About({
   const t = await getTranslations();
 
   return (
-    <div className="flex flex-col flex-1 bg-slate-100">
+    <div className="flex flex-col flex-1">
       <div className="w-full container mx-auto px-4 sm:px-6 lg:px-8 pt-6 max-w-2xl">
         <Breadcrumb
           items={[
@@ -37,7 +37,7 @@ export default async function About({
       </section>
 
       <section className="container mx-auto px-4 sm:px-6 lg:px-8 pb-12 max-w-2xl space-y-10">
-        
+
         <div>
           <h2 className="text-lg sm:text-xl font-semibold text-slate-700">
             {t("about.sections.what.title")}

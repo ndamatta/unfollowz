@@ -1,8 +1,8 @@
-import { Link } from '../i18n/navigations';
+import { Link } from "@/src/i18n/navigations";
 import { getTranslations } from "next-intl/server";
 
 export default async function Footer() {
-  const t = await getTranslations('footer.links');
+  const t = await getTranslations("footer.links");
   const year = new Date().getFullYear();
 
   return (
@@ -18,9 +18,9 @@ export default async function Footer() {
 
       <div className="flex items-center gap-2">
         <p className="text-sm text-zinc-400">©{year}</p>
-        <Link href="https://github.com/ndamatta" className="text-sm text-zinc-400 hover:text-zinc-200 transition-colors">
+        <a href="https://github.com/ndamatta" target="_blank" rel="noopener noreferrer" className="text-sm text-zinc-400 hover:text-zinc-200 transition-colors">
           ndamatta
-        </Link>
+        </a>
       </div>
     </footer>
   );

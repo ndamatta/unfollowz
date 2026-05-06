@@ -17,7 +17,7 @@ export default async function HowItWorks({
   const steps = t.raw("howItWorks.steps");
 
   return (
-    <div className="flex flex-col flex-1 bg-slate-100">
+    <div className="flex flex-col flex-1">
       <div className="w-full container mx-auto px-4 sm:px-6 lg:px-8 pt-6 max-w-5xl">
         <Breadcrumb
           items={[
@@ -40,10 +40,10 @@ export default async function HowItWorks({
         </p>
       </section>
 
-      {/* instructionss */}
+      {/* instructions */}
       <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 max-w-5xl">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
-          
+
           {/* video */}
           <div className="w-full aspect-video rounded-xl overflow-hidden border border-slate-300">
             <iframe

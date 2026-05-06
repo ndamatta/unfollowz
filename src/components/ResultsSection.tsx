@@ -63,6 +63,7 @@ function UserList({ users }: { users: IGUser[] }) {
     <div className="mx-auto max-w-2xl">
       <input
         type="text"
+        aria-label={t("searchPlaceholder")}
         placeholder={t("searchPlaceholder")}
         value={search}
         onChange={(e) => {
@@ -74,6 +75,7 @@ function UserList({ users }: { users: IGUser[] }) {
 
       <div className="overflow-hidden rounded-xl border border-dashed border-slate-600 min-h-[585px]">
         <table className="w-full text-sm text-left">
+          <caption className="sr-only">{t("tableTitle")}</caption>
           <thead className="bg-zinc-800 text-slate-100 text-xs uppercase">
             <tr>
               <th colSpan={2} className="px-4 py-2 text-center">

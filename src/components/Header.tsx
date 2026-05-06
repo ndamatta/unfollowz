@@ -21,7 +21,7 @@ export default async function Header() {
           />
         </Link>
 
-        <nav className="flex items-center gap-2 sm:gap-4">
+        <nav aria-label="Main navigation" className="flex items-center gap-2 sm:gap-4">
           <Link href="/" className="text-sm sm:text-base text-rose-400 px-2 py-1 rounded-xl hover:bg-rose-400 hover:text-zinc-800 hover:scale-105 hover:shadow-md transition-all duration-200">
             {t("home")}
           </Link>

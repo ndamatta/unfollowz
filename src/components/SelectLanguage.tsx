@@ -13,7 +13,7 @@ export default function SelectLanguage() {
   };
 
   return (
-    <select className="text-sm text-rose-400 ml-4 px-1 rounded-xl bg-transparent border border-transparent hover:bg-rose-400 hover:text-zinc-800 hover:shadow-md transition-all duration-200 cursor-pointer focus:outline-none" onChange={(e) => changeLanguage(e.target.value)} value={currentLocale}>
+    <select aria-label="Select language" className="text-sm text-rose-400 ml-4 px-1 rounded-xl bg-transparent border border-transparent hover:bg-rose-400 hover:text-zinc-800 hover:shadow-md transition-all duration-200 cursor-pointer focus:outline-none" onChange={(e) => changeLanguage(e.target.value)} value={currentLocale}>
       <option value="en">English</option>
       <option value="es">Español</option>
     </select>

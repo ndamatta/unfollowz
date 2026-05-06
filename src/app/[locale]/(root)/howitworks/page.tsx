@@ -1,12 +1,22 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import FAQSection from "@/src/components/FAQSection";
 import Breadcrumb from "@/src/components/Breadcrumb";
+import type { Metadata } from "next";
 
-export default async function HowItWorks({
-  params,
-}: {
+type Props = {
   params: Promise<{ locale: string }>;
-}) {
+};
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "metadata.howItWorks" });
+  return {
+    title: t("title"),
+    description: t("description"),
+  };
+}
+
+export default async function HowItWorks({ params }: Props) {
   const { locale } = await params;
 
   setRequestLocale(locale);

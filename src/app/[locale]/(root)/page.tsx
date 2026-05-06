@@ -3,12 +3,22 @@ import CTA from "@/src/components/CTA";
 import Processor from "@/src/components/Processor";
 import FAQSection from "@/src/components/FAQSection";
 import Breadcrumb from "@/src/components/Breadcrumb";
+import type { Metadata } from "next";
 
-export default async function Home({
-  params,
-}: {
+type Props = {
   params: Promise<{ locale: string }>;
-}) {
+};
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "metadata.home" });
+  return {
+    title: t("title"),
+    description: t("description"),
+  };
+}
+
+export default async function Home({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations();

@@ -23,13 +23,16 @@ function FlatItem({ item }: { item: FAQItem }) {
   );
 }
 
-function AccordionItem({ item }: { item: FAQItem }) {
+function AccordionItem({ item, index }: { item: FAQItem; index: number }) {
   const [open, setOpen] = useState(false);
+  const panelId = `faq-panel-${index}`;
 
   return (
     <div className="border border-slate-700 rounded-xl overflow-hidden">
       <button
         onClick={() => setOpen((prev) => !prev)}
+        aria-expanded={open}
+        aria-controls={panelId}
         className="w-full flex items-center justify-between px-5 py-4 bg-zinc-900 text-left text-slate-100 text-sm sm:text-base font-medium hover:bg-linear-to-tr from-zinc-950 to-zinc-800 transition-colors duration-200"
       >
         <span>{item.q}</span>
@@ -40,7 +43,7 @@ function AccordionItem({ item }: { item: FAQItem }) {
         </span>
       </button>
       {open && (
-        <div className="px-5 py-4 bg-zinc-900 text-slate-200 text-xs sm:text-sm leading-relaxed border-rose-400 border-b">
+        <div id={panelId} role="region" className="px-5 py-4 bg-zinc-900 text-slate-200 text-xs sm:text-sm leading-relaxed border-rose-400 border-b">
           {item.a}
         </div>
       )}
@@ -75,11 +78,11 @@ export default function FAQSection({
         </div>
 
         <div className="space-y-6">
-          {items.map((item) =>
+          {items.map((item, index) =>
             variant === "flat" ? (
               <FlatItem key={item.q} item={item} />
             ) : (
-              <AccordionItem key={item.q} item={item} />
+              <AccordionItem key={item.q} item={item} index={index} />
             ),
           )}
         </div>

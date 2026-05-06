@@ -1,11 +1,21 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import Breadcrumb from "@/src/components/Breadcrumb";
+import type { Metadata } from "next";
 
-export default async function About({
-  params,
-}: {
+type Props = {
   params: Promise<{ locale: string }>;
-}) {
+};
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "metadata.about" });
+  return {
+    title: t("title"),
+    description: t("description"),
+  };
+}
+
+export default async function About({ params }: Props) {
   const { locale } = await params;
 
   setRequestLocale(locale);

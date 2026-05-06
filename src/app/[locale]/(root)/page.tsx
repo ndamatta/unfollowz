@@ -7,7 +7,7 @@ import Breadcrumb from "@/src/components/Breadcrumb";
 export default async function Home({
   params,
 }: {
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
   setRequestLocale(locale);

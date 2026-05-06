@@ -1,5 +1,6 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import FAQSection from "@/src/components/FAQSection";
+import Breadcrumb from "@/src/components/Breadcrumb";
 
 export default async function HowItWorks({
   params,
@@ -17,7 +18,15 @@ export default async function HowItWorks({
 
   return (
     <div className="flex flex-col flex-1 bg-slate-100">
-      
+      <div className="w-full container mx-auto px-4 sm:px-6 lg:px-8 pt-6 max-w-5xl">
+        <Breadcrumb
+          items={[
+            { label: t("common.nav.home"), href: "/" },
+            { label: t("howItWorks.title") },
+          ]}
+        />
+      </div>
+
       <section className="text-center py-12 px-4">
         <h1 className="text-2xl sm:text-4xl font-semibold text-zinc-900">
           {t("howItWorks.title")}

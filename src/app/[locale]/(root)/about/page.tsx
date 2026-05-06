@@ -1,5 +1,6 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "../../../../i18n/navigations";
+import Breadcrumb from "@/src/components/Breadcrumb";
 
 export default async function About({
   params,
@@ -14,10 +15,19 @@ export default async function About({
 
   return (
     <div className="flex flex-col flex-1 bg-slate-100">
+      <div className="w-full container mx-auto px-4 sm:px-6 lg:px-8 pt-6 max-w-2xl">
+        <Breadcrumb
+          items={[
+            { label: t("common.nav.home"), href: "/" },
+            { label: t("about.title") },
+          ]}
+        />
+      </div>
+
       <section className="text-center py-12 px-4">
         <h1 className="text-2xl sm:text-4xl font-semibold text-zinc-900">
           {t("about.title")}
-          <span className="font-sketch text-rose-400 text-3xl sm:text-2xl md:text-5xl">
+          <span className="font-sketch text-rose-400 text-3xl sm:text-4xl md:text-5xl">
             .
           </span>
         </h1>
@@ -70,7 +80,7 @@ export default async function About({
             {t("about.sections.transparency.description")}
           </p>
 
-          <p className="text-xs sm:text-sm text-red-400 mt-3 font-bold">
+          <p className="text-xs sm:text-sm text-red-500 mt-3 font-bold">
             <span>ⓘ</span> {t("about.sections.transparency.warning")}
           </p>
         </div>

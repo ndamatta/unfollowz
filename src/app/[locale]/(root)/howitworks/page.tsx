@@ -30,7 +30,7 @@ export default async function HowItWorks({
       <section className="text-center py-12 px-4">
         <h1 className="text-2xl sm:text-4xl font-semibold text-zinc-900">
           {t("howItWorks.title")}
-          <span className="font-sketch text-rose-400 text-3xl sm:text-2xl md:text-5xl">
+          <span className="font-sketch text-rose-400 text-3xl sm:text-4xl md:text-5xl">
             .
           </span>
         </h1>

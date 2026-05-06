@@ -59,15 +59,14 @@ export default function FAQSection({
   subtitle: string;
   cta: boolean;
 }) {
-  const t = useTranslations("FAQ");
-
+  const t = useTranslations("home.faq");
   return (
     <section className="w-full bg-slate-100 my-10">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-0 my-20 max-w-2xl">
         <div className="text-center mb-6">
-          <h2 className="text-1xl sm:text-3xl font-semibold text-zinc-900">
+          <h2 className="text-xl sm:text-3xl font-semibold text-zinc-900">
             FAQ
-            <span className="font-sketch text-rose-400 text-3xl sm:text-1xl md:text-4xl">
+            <span className="font-sketch text-rose-400 text-2xl sm:text-4xl md:text-5xl">
               s
             </span>
           </h2>
@@ -91,7 +90,7 @@ export default function FAQSection({
               href="/howitworks"
               className="text-sm sm:text-base text-zinc-900 hover:text-zinc-800 transition-colors duration-200"
             >
-              More questions? See the full FAQ →
+              {t("cta")} →
             </Link>
           </div>
         )}

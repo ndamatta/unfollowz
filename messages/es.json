@@ -40,10 +40,10 @@
     },
     "results": {
       "followers": "Seguidores",
-      "notFollowingBack": "No te siguen",
+      "notFollowingBack": "No te siguen de vuelta",
       "following": "Siguiendo",
       "searchPlaceholder": "Buscar usuario",
-      "tableTitle": "Lista de unfollower",
+      "tableTitle": "Lista de no seguidores",
       "noUnfollowers": "Todos los usuarios te siguen."
     },
     "faq": {
@@ -127,7 +127,7 @@
   },
   "about": {
     "title": "Sobre este proyecto",
-    "description": "una forma simple de ver quién no te sigue.",
+    "description": "Una forma simple de ver quién no te sigue de vuelta.",
     "sections": {
       "what": {
         "title": "Sobre unfollowz",
@@ -144,7 +144,7 @@
       },
       "how": {
         "title": "Cómo funciona",
-        "description": "Instagram no muestra directamente quién no te sigue de vuelta. Sin embargo, tus datos exportados incluyen listas completas de tus seguidores y de a quién sigues. Esta herramienta compara ambas listas localmente y calcula la diferencia para identificar quién no te sigue."
+        "description": "Instagram no muestra directamente quién no te sigue de vuelta. Sin embargo, tus datos exportados incluyen listas completas de tus seguidores y de a quién sigues. Esta herramienta compara ambas listas localmente y calcula la diferencia para identificar quién no te sigue de vuelta."
       },
       "transparency": {
         "title": "Transparencia",
@@ -162,5 +162,15 @@
       "home": "Inicio",
       "about": "Acerca de"
     }
+  },
+  "notFound": {
+    "title": "Página no encontrada",
+    "description": "La página que buscas no existe o ha sido movida.",
+    "backHome": "Volver al inicio"
+  },
+  "errorPage": {
+    "title": "Algo salió mal",
+    "description": "Ocurrió un error inesperado. Por favor, intenta de nuevo.",
+    "retry": "Intentar de nuevo"
   }
 }

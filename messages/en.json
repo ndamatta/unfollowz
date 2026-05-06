@@ -43,7 +43,7 @@
       "notFollowingBack": "Not following you back",
       "following": "Following",
       "searchPlaceholder": "Search user",
-      "tableTitle": "List of unfollowers",
+      "tableTitle": "List of non-followers",
       "noUnfollowers": "All users are following you."
     },
     "faq": {
@@ -127,7 +127,7 @@
   },
   "about": {
     "title": "About this project",
-    "description": "a simple way to check who doesn't follow you back.",
+    "description": "A simple way to check who doesn't follow you back.",
     "sections": {
       "what": {
         "title": "About unfollowz",
@@ -144,7 +144,7 @@
       },
       "how": {
         "title": "How it works",
-        "description": "Instagram doesn't show who doesn't follow you back. However, your exported data includes complete lists of your followers and who you follow. This tool compares both lists locally and calculates the difference to identify non followers."
+        "description": "Instagram doesn't show who doesn't follow you back. However, your exported data includes complete lists of your followers and who you follow. This tool compares both lists locally and calculates the difference to identify non-followers."
       },
       "transparency": {
         "title": "Transparency",
@@ -162,5 +162,15 @@
       "home": "Home",
       "about": "About"
     }
+  },
+  "notFound": {
+    "title": "Page not found",
+    "description": "The page you're looking for doesn't exist or has been moved.",
+    "backHome": "Back to home"
+  },
+  "errorPage": {
+    "title": "Something went wrong",
+    "description": "An unexpected error occurred. Please try again.",
+    "retry": "Try again"
   }
 }

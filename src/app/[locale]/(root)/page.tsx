@@ -11,10 +11,10 @@ type Props = {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "metadata.home" });
+  const t = await getTranslations({ locale, namespace: "home.cta" });
   return {
-    title: t("title"),
-    description: t("description"),
+    title: t("headline"),
+    description: t("subheadline"),
   };
 }
 

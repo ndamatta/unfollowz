@@ -9,8 +9,7 @@ export default function SelectLanguage() {
   const currentLocale = useLocale();
 
   const changeLanguage = (newLocale: string) => {
-    const newPathname = pathName.replace(new RegExp(`^/${currentLocale}`), `/${newLocale}`);
-    router.push(newPathname);
+    router.push(pathName, { locale: newLocale });
   };
 
   return (

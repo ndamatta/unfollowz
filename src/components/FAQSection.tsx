@@ -16,7 +16,7 @@ function FlatItem({ item }: { item: FAQItem }) {
       <h3 className="text-sm sm:text-base font-semibold text-slate-300">
         {item.q}
       </h3>
-      <p className="text-xs sm:text-sm text-slate-100 mt-1 leading-relaxed">
+      <p className="text-xs sm:text-sm text-slate-100 mt-1 leading-relaxed whitespace-pre-line">
         {item.a}
       </p>
     </div>
@@ -43,7 +43,7 @@ function AccordionItem({ item, index }: { item: FAQItem; index: number }) {
         </span>
       </button>
       {open && (
-        <div id={panelId} role="region" className="px-5 py-4 bg-zinc-900 text-slate-200 text-xs sm:text-sm leading-relaxed border-rose-400 border-b">
+        <div id={panelId} role="region" className="px-5 py-4 bg-zinc-900 text-slate-200 text-xs sm:text-sm leading-relaxed border-rose-400 border-b whitespace-pre-line">
           {item.a}
         </div>
       )}

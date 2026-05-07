@@ -51,39 +51,39 @@
       "cta": "¿Más preguntas? Aquí hay más respuestas.",
       "items": [
         {
-          "q": "¿Es seguro usar esto?",
-          "a": "Sí. Todo se ejecuta localmente en tu navegador. Tus archivos nunca salen de tu dispositivo y no se suben, almacenan ni comparten."
+          "q": "¿Por qué es seguro?",
+          "a": "No pedimos tu usuario, contraseña ni acceso a tu cuenta.\nLos archivos que subes se procesan localmente en tu navegador, lo que significa que tus datos no se comparten, no se venden ni se almacenan en un servidor. Cuando cierras la página, todo se elimina."
         },
         {
-          "q": "¿Necesito mi contraseña de Instagram?",
-          "a": "No. No necesitas iniciar sesión ni conectar tu cuenta. Solo utilizas archivos que descargas directamente desde Meta."
+          "q": "¿Qué contienen los archivos que estoy subiendo?",
+          "a": "Los archivos contienen básicamente una lista con los nombres de usuario de las personas que sigues y de quienes te siguen. JSON es un formato muy usado para organizar información en programación.\nPor ejemplo, podrías tener un archivo llamado \"frutas.json\" con una lista como manzana, banana y naranja."
         },
         {
-          "q": "¿Por qué necesito descargar archivos desde Meta?",
-          "a": "Instagram no proporciona esta información directamente. Al usar los datos exportados de tu cuenta, podemos comparar con precisión tus seguidores y a quién sigues."
+          "q": "¿Qué es Meta y por qué debo solicitar mis archivos?",
+          "a": "Meta es la empresa detrás de Instagram, Facebook y WhatsApp. Al descargar tus archivos directamente desde Meta, obtienes la información oficial de tu cuenta de forma segura.\nunfollowz, a diferencia de muchas apps, prioriza la privacidad. No nos interesa acceder a tu cuenta, solo ayudarte a ver quién no te sigue de vuelta."
         },
         {
           "q": "¿Cuánto tiempo toma?",
-          "a": "Aproximadamente 5 minutos para solicitar y descargar tus datos desde Meta, y solo unos segundos para procesarlos aquí."
+          "a": "Normalmente unos 5 minutos. Después de solicitar tu información, Meta te enviará un correo de confirmación y luego tus archivos, muchas veces casi al instante. En algunos casos puede tardar un poco más. Una vez que recibas los archivos, estarán disponibles para descargar durante 4 días. Después de eso, expirarán y tendrás que solicitarlos nuevamente."
         }
       ]
     }
   },
   "howItWorks": {
     "title": "Cómo funciona",
-    "meta": "Sin inicio de sesión · Se ejecuta localmente · Toma menos de 5 minutos",
+    "meta": "Sin iniciar sesión · Funciona en tu navegador · Toma unos 5 minutos",
     "steps": [
       {
-        "title": "Solicita tus datos a Meta",
-        "description": "Ve a la configuración de tu cuenta y solicita la exportación de tus datos. Esto suele tardar unos minutos."
+        "title": "Solicita tus datos de Instagram a Meta",
+        "description": "Entra a la configuración de tu cuenta y pide una copia de tu información a Meta. Normalmente la preparan bastante rápido."
       },
       {
         "title": "Descarga los archivos de seguidores y seguidos",
-        "description": "Una vez listos, descarga tus datos y ubica los archivos de seguidores y seguidos."
+        "description": "Cuando Meta te envíe los archivos, descárgalos y busca dentro de la carpeta las listas de seguidores y seguidos."
       },
       {
-        "title": "Súbelos y obtén tus resultados",
-        "description": "Sube los archivos en la herramienta y verás al instante quién no te sigue de vuelta."
+        "title": "Sube los archivos a unfollowz",
+        "description": "Sube ambos archivos a unfollowz y la herramienta comparará las listas para mostrarte quién no te sigue de vuelta."
       }
     ],
     "videoTitle": "Cómo funciona — video explicativo",
@@ -91,65 +91,66 @@
       "subtitle": "¿Aún tienes dudas? Aquí tienes todo lo que necesitas saber.",
       "items": [
         {
-          "q": "¿Qué archivos necesito exactamente?",
-          "a": "Necesitas los archivos de seguidores y seguidos de la exportación de tu cuenta de Meta. La guía paso a paso de arriba muestra exactamente dónde encontrarlos."
+          "q": "¿Dónde encuentro los archivos que necesito?",
+          "a": "Los archivos se descargan desde Meta, dentro de la sección de información de tu cuenta de Instagram.\nLa guía y el video de arriba te muestran exactamente dónde entrar y qué seleccionar."
         },
         {
-          "q": "¿Por qué funciona este método?",
-          "a": "Tus datos exportados incluyen listas completas de a quién sigues y quién te sigue. Al compararlas localmente, podemos identificar quién no te sigue de vuelta."
+          "q": "¿Qué archivos tengo que subir exactamente?",
+          "a": "Necesitas dos archivos: uno con las personas que sigues y otro con tus seguidores. La herramienta compara ambas listas para encontrar quién no te sigue de vuelta."
         },
         {
-          "q": "¿En qué formato deben estar los archivos?",
-          "a": "La herramienta soporta el formato JSON proporcionado por Meta. Solo descarga los archivos como se indica en la guía."
+          "q": "¿Por qué no iniciar sesión directamente con Instagram?",
+          "a": "Porque muchas apps piden acceso completo a tu cuenta y después usan tu información sin permiso.\nunfollowz evita eso completamente usando los archivos oficiales que Meta te deja descargar."
         },
         {
-          "q": "¿Puedo usar esto en el móvil?",
-          "a": "Sí, pero se recomienda usar una computadora para una experiencia más cómoda al descargar y subir los archivos."
+          "q": "¿Qué ocurre si subo el archivo incorrecto?",
+          "a": "No ocurre nada grave. La herramienta simplemente no podrá procesarlo correctamente. Si aparece un error, revisa la guía y asegurate de subir los archivos correctos."
         },
         {
-          "q": "¿Se envían mis datos a algún servidor?",
-          "a": "No. Todo el procesamiento ocurre localmente en tu navegador. Tus datos permanecen en tu dispositivo en todo momento."
+          "q": "¿Esto funciona en un telefono?",
+          "a": "Sí, aunque la experiencia suele ser más cómoda desde una computadora, especialmente al descargar y subir archivos."
         },
         {
-          "q": "¿Pueden acceder a mi cuenta de Instagram?",
-          "a": "No. Esta herramienta no tiene acceso a tu cuenta. Solo lee los archivos que proporcionas manualmente."
+          "q": "¿Qué hace unfollowz con mis archivos?",
+          "a": "Los archivos se leen directamente en tu navegador para comparar ambas listas. Este proceso se llama técnicamente diferencia de conjuntos.\nTus archivos nunca se envían a servidores, no se almacenan, no se comparten ni se venden."
         },
         {
-          "q": "¿Qué pasa si mis archivos no funcionan?",
-          "a": "Asegúrate de haber descargado los archivos correctos desde Meta y de no haberlos modificado. Si el problema persiste, intenta descargarlos nuevamente."
+          "q": "¿Para quién es unfollowz?",
+          "a": "Para cualquier persona que use Instagram. Desde cuentas personales hasta negocios, creadores o páginas con miles o incluso millones de seguidores.\nSi quieres ver quién no te sigue de vuelta de una forma simple y privada, unfollowz es para ti."
         },
         {
-          "q": "¿Por qué no usar una app para esto?",
-          "a": "La mayoría de las apps requieren acceso a tu cuenta. Esta herramienta evita eso por completo al usar tus propios datos exportados, haciéndola más segura y privada."
+          "q": "¿Qué significa Open Source?",
+          "a": "Open Source significa que el mecanismo y el código detrás de unfollowz son públicos y transparentes. Cualquiera puede revisar cómo funciona la comparación de listas y verificar que no hay nada oculto.\nEsto no significa que otras personas puedan ver tus datos ni modificar la app en tu dispositivo. Tus archivos siguen siendo privados y solo se procesan en tu navegador."
         }
       ]
     }
   },
   "about": {
     "title": "Sobre este proyecto",
-    "description": "Una forma simple de ver quién no te sigue de vuelta.",
+    "description": "Una herramienta creada con una idea simple.\nQue puedas usar tus propios datos sin entregar tu cuenta ni tu privacidad.",
     "sections": {
-      "what": {
-        "title": "Sobre unfollowz",
-        "description": "unfollowz es una herramienta que te ayuda a identificar quién no te sigue de vuelta en Instagram. Funciona comparando dos listas de los datos que exportas desde Meta: seguidores y seguidos."
+      "vision": {
+        "title": "Por qué existe unfollowz",
+        "description": "La mayoría de las apps para ver quién no te sigue de vuelta te piden iniciar sesión con Instagram. Muchas terminan teniendo acceso completo a tu cuenta, tus mensajes o tu información.\nunfollowz nació como una alternativa simple: usar únicamente los datos que Meta ya te permite descargar oficialmente."
       },
       "privacy": {
-        "title": "Privacidad primero",
-        "description": "Tus datos nunca salen de tu dispositivo. Todo se procesa localmente en tu navegador. Esto significa que no hay subidas, servidores ni acceso de terceros.",
-        "points": {
-          "noLogin": "No requiere inicio de sesión",
-          "noAccess": "Sin acceso a tu cuenta de Instagram",
-          "noStorage": "No se recopilan ni almacenan datos"
-        }
+        "title": "Mi visión sobre privacidad",
+        "description": "Creo que deberías poder usar herramientas en internet sin tener que entregar tu contraseña o confiar ciegamente en aplicaciones externas.\nTus datos son tuyos. Por eso unfollowz funciona completamente en tu navegador y no necesita servidores para procesar tu información."
       },
-      "how": {
-        "title": "Cómo funciona",
-        "description": "Instagram no muestra directamente quién no te sigue de vuelta. Sin embargo, tus datos exportados incluyen listas completas de tus seguidores y de a quién sigues. Esta herramienta compara ambas listas localmente y calcula la diferencia para identificar quién no te sigue de vuelta."
+      "opensource": {
+        "title": "Open Source y transparencia",
+        "description": "El proyecto es Open Source porque quiero que cualquiera pueda revisar cómo funciona.\nNo hay lógica oculta, tracking raro ni cosas pasando en segundo plano. Si una herramienta maneja datos personales, debería ser transparente sobre lo que hace."
       },
-      "transparency": {
-        "title": "Transparencia",
-        "description": "Este proyecto está diseñado para ser simple y transparente. No hay seguimiento ni complejidad innecesaria.",
-        "warning": "Si una herramienta te pide tu contraseña, deberías cuestionarlo."
+      "simple": {
+        "title": "Mantenerlo simple",
+        "description": "unfollowz no intenta ser una red social, una plataforma ni una app llena de funciones.\nHace una sola cosa: comparar listas para mostrar quién no te sigue de vuelta."
+      },
+      "developer": {
+        "title": "Sobre mi",
+        "description": "Mi nombre es Natanael, soy de Argentina y soy ingeniero de software.\nCreé unfollowz como un proyecto simple, transparente y enfocado en la privacidad. Me interesa construir herramientas útiles, fáciles de entender y que respeten los datos de las personas."
+      },
+      "warning": {
+        "description": "Si una app te pide tu contraseña, probablemente deberías pensarlo dos veces."
       }
     },
     "cta": {
@@ -162,15 +163,5 @@
       "home": "Inicio",
       "about": "Acerca de"
     }
-  },
-  "notFound": {
-    "title": "Página no encontrada",
-    "description": "La página que buscas no existe o ha sido movida.",
-    "backHome": "Volver al inicio"
-  },
-  "errorPage": {
-    "title": "Algo salió mal",
-    "description": "Ocurrió un error inesperado. Por favor, intenta de nuevo.",
-    "retry": "Intentar de nuevo"
   }
 }

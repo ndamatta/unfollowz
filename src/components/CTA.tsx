@@ -7,12 +7,14 @@ export default async function CTA() {
 
   return (
     <section className="min-h-screen flex flex-col items-center justify-center text-center px-4 sm:px-6 lg:px-8">
-      <div className="mb-6">
+      <div>
         <Image
-          src="/logo.webp"
+          src="/images/logo.webp"
           alt="unfollowz logo"
-          width={120}
-          height={120}
+          width={480}
+          height={480}
+          quality={90}
+          sizes="90vw"
           priority
         />
       </div>

@@ -131,7 +131,7 @@
     "sections": {
       "vision": {
         "title": "Why unfollowz exists",
-        "description": "Most apps that show who doesn’t follow you back ask you to log in with Instagram. Many of them end up having full access to your account, messages, or personal information.\nunfollowz was created as a simple alternative: only using the data that Meta already lets you officially download."
+        "description": "Most apps that show who doesn’t follow you back ask you to log in with Instagram. Many of them end up having full access to your account, messages, or personal information.\nunfollowz only usesthe data that Meta lets you officially download."
       },
       "privacy": {
         "title": "My view on privacy",
@@ -139,11 +139,11 @@
       },
       "opensource": {
         "title": "Open Source and transparency",
-        "description": "The project is Open Source because I want anyone to be able to review how it works.\nThere’s no hidden logic, weird tracking, or things happening in the background. If a tool handles personal data, it should be transparent about what it does."
+        "description": "The project is Open Source because I want anyone to be able to review how it works.\nThere’s no hidden and weird tracking, or things happening in the background. If a tool handles personal data, it should be transparent about what it does."
       },
       "simple": {
         "title": "Keeping it simple",
-        "description": "unfollowz is not trying to be a social network, a platform, or an app full of features.\nIt does one thing: compare lists to show who doesn’t follow you back."
+        "description": "unfollowz is not trying to be a social network or a platform with many features.\nIt does one thing: compare lists to show who doesn’t follow you back."
       },
       "developer": {
         "title": "About the developer",

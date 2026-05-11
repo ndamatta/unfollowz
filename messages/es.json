@@ -131,7 +131,7 @@
     "sections": {
       "vision": {
         "title": "Por qué existe unfollowz",
-        "description": "La mayoría de las apps para ver quién no te sigue de vuelta te piden iniciar sesión con Instagram. Muchas terminan teniendo acceso completo a tu cuenta, tus mensajes o tu información.\nunfollowz nació como una alternativa simple: usar únicamente los datos que Meta ya te permite descargar oficialmente."
+        "description": "La mayoría de las apps para ver quién no te sigue de vuelta te piden iniciar sesión con Instagram. Muchas terminan teniendo acceso completo a tu cuenta, tus mensajes o tu información.\nunfollowz nació para usar únicamente los datos que Meta ya te permite descargar oficialmente."
       },
       "privacy": {
         "title": "Mi visión sobre privacidad",
@@ -139,11 +139,11 @@
       },
       "opensource": {
         "title": "Open Source y transparencia",
-        "description": "El proyecto es Open Source porque quiero que cualquiera pueda revisar cómo funciona.\nNo hay lógica oculta, tracking raro ni cosas pasando en segundo plano. Si una herramienta maneja datos personales, debería ser transparente sobre lo que hace."
+        "description": "El proyecto es Open Source porque quiero que cualquiera pueda revisar cómo funciona.\nNo hay lógica oculta o tracking raro ni cosas pasando en segundo plano. Si una herramienta maneja datos personales, debería ser transparente."
       },
       "simple": {
         "title": "Mantenerlo simple",
-        "description": "unfollowz no intenta ser una red social, una plataforma ni una app llena de funciones.\nHace una sola cosa: comparar listas para mostrar quién no te sigue de vuelta."
+        "description": "unfollowz no intenta ser una red social ni una plataforma llena de funcionalidades.\nHace una sola cosa: comparar listas para mostrar quién no te sigue de vuelta."
       },
       "developer": {
         "title": "Sobre mi",

@@ -1,5 +1,6 @@
 import SimpleHeader from "@/src/components/SimpleHeader";
 import SimpleFooter from "@/src/components/SimpleFooter";
+import Link from "next/link";
 
 export default function NotFound() {
   return (
@@ -12,12 +13,13 @@ export default function NotFound() {
         <p className="text-sm sm:text-base text-slate-500 mb-8 max-w-md">
           Go back to the homepage | Regresar a la página principal
         </p>
-        <a
+        <Link
           href="/"
+          aria-label="Go to homepage"
           className="px-6 py-2 rounded-xl bg-zinc-900 text-slate-100 text-sm sm:text-base font-medium hover:bg-zinc-800 hover:border-rose-400 border transition-all duration-200"
         >
-          ← 
-        </a>
+          ← Back
+        </Link>
       </main>
 
       <SimpleFooter />

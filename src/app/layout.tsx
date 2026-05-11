@@ -14,8 +14,16 @@ const cabin_sketch = Cabin_Sketch({
 });
 
 export const metadata: Metadata = {
-  title: "unfollowz",
+  title: {
+    template: "%s | unfollowz",
+    default: "unfollowz",
+  },
   description: "Find who doesn't follow you back on Instagram. Open source. No login. No external apps.",
+};
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({

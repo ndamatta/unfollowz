@@ -16,9 +16,30 @@ export async function generateMetadata({
     namespace: "about",
   });
 
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://unfollowz.com";
+
   return {
     title: t("title"),
     description: t("description"),
+    openGraph: {
+      title: t("title"),
+      description: t("description"),
+      type: "website",
+      locale,
+      url: `${baseUrl}/${locale}/about`,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: t("title"),
+      description: t("description"),
+    },
+    alternates: {
+      canonical: `${baseUrl}/${locale}/about`,
+      languages: {
+        en: `${baseUrl}/en/about`,
+        es: `${baseUrl}/es/about`,
+      },
+    },
   };
 }
 

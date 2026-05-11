@@ -56,13 +56,15 @@ export default function FAQSection({
   variant,
   subtitle,
   cta,
+  namespace = "home.faq",
 }: {
   items: FAQItem[];
   variant: FAQVariant;
   subtitle: string;
   cta: boolean;
+  namespace?: string;
 }) {
-  const t = useTranslations("home.faq");
+  const t = useTranslations(namespace);
   return (
     <section className="w-full bg-slate-100 my-10">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-0 my-20 max-w-2xl">

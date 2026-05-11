@@ -1,4 +1,9 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
+
+type FAQStep = {
+  title: string;
+  description: string;
+};
 import FAQSection from "@/src/components/FAQSection";
 import Breadcrumb from "@/src/components/Breadcrumb";
 import type { Metadata } from "next";
@@ -10,9 +15,29 @@ type Props = {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "howItWorks" });
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://unfollowz.com";
   return {
     title: t("title"),
     description: t("meta"),
+    openGraph: {
+      title: t("title"),
+      description: t("meta"),
+      type: "website",
+      locale,
+      url: `${baseUrl}/${locale}/howitworks`,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: t("title"),
+      description: t("meta"),
+    },
+    alternates: {
+      canonical: `${baseUrl}/${locale}/howitworks`,
+      languages: {
+        en: `${baseUrl}/en/howitworks`,
+        es: `${baseUrl}/es/howitworks`,
+      },
+    },
   };
 }
 
@@ -66,7 +91,7 @@ export default async function HowItWorks({ params }: Props) {
 
           {/* steps */}
           <div className="space-y-5">
-            {steps.map((step: any, i: number) => (
+            {steps.map((step: FAQStep, i: number) => (
               <div key={i}>
                 <h3 className="text-base font-semibold text-zinc-900">
                   <span className="text-rose-400 font-bold">
@@ -89,6 +114,7 @@ export default async function HowItWorks({ params }: Props) {
         variant="accordion"
         subtitle={t("howItWorks.faq.subtitle")}
         cta={false}
+        namespace="howItWorks.faq"
       />
     </div>
   );

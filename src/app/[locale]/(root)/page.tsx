@@ -12,9 +12,29 @@ type Props = {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "home.cta" });
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://unfollowz.com";
   return {
     title: t("headline"),
     description: t("subheadline"),
+    openGraph: {
+      title: t("headline"),
+      description: t("subheadline"),
+      type: "website",
+      locale,
+      url: `${baseUrl}/${locale}`,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: t("headline"),
+      description: t("subheadline"),
+    },
+    alternates: {
+      canonical: `${baseUrl}/${locale}`,
+      languages: {
+        en: `${baseUrl}/en`,
+        es: `${baseUrl}/es`,
+      },
+    },
   };
 }
 

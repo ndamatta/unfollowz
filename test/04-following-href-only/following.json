@@ -1,0 +1,20 @@
+{
+  "relationships_following": [
+    {
+      "string_list_data": [
+        {
+          "href": "https://www.instagram.com/_u/frank_the_tank",
+          "timestamp": 1779479020
+        }
+      ]
+    },
+    {
+      "string_list_data": [
+        {
+          "href": "https://www.instagram.com/_u/grace.x",
+          "timestamp": 1779478946
+        }
+      ]
+    }
+  ]
+}

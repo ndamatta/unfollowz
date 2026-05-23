@@ -1,0 +1,22 @@
+{
+  "relationships_following": [
+    {
+      "string_list_data": [
+        {
+          "value": "dave_99",
+          "href": "https://www.instagram.com/_u/dave_99",
+          "timestamp": 1779479020
+        }
+      ]
+    },
+    {
+      "string_list_data": [
+        {
+          "value": "eve.m",
+          "href": "https://www.instagram.com/_u/eve.m",
+          "timestamp": 1779478946
+        }
+      ]
+    }
+  ]
+}

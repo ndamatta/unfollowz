@@ -1,0 +1,22 @@
+{
+  "relationships_following": [
+    {
+      "title": "alice.smith",
+      "string_list_data": [
+        {
+          "href": "https://www.instagram.com/_u/alice.smith",
+          "timestamp": 1779479020
+        }
+      ]
+    },
+    {
+      "title": "charlie.dev",
+      "string_list_data": [
+        {
+          "href": "https://www.instagram.com/_u/charlie.dev",
+          "timestamp": 1779478946
+        }
+      ]
+    }
+  ]
+}

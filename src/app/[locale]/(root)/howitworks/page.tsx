@@ -7,6 +7,7 @@ type FAQStep = {
 import FAQSection from "@/src/components/FAQSection";
 import Breadcrumb from "@/src/components/Breadcrumb";
 import type { Metadata } from "next";
+import { SITE_URL } from "@/src/lib/config";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -15,7 +16,7 @@ type Props = {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "howItWorks" });
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://unfollowz.com";
+  const baseUrl = SITE_URL;
   return {
     title: t("title"),
     description: t("meta"),

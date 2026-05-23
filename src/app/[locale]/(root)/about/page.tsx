@@ -1,6 +1,7 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import Breadcrumb from "@/src/components/Breadcrumb";
 import type { Metadata } from "next";
+import { SITE_URL, GITHUB_URL, PORTFOLIO_URL } from "@/src/lib/config";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -16,7 +17,7 @@ export async function generateMetadata({
     namespace: "about",
   });
 
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://unfollowz.com";
+  const baseUrl = SITE_URL;
 
   return {
     title: t("title"),
@@ -141,7 +142,7 @@ export default async function About({ params }: Props) {
       <div className="text-center pb-16">
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
-            href="https://github.com/ndamatta"
+            href={GITHUB_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-2 rounded-xl bg-zinc-900 text-slate-100 text-sm sm:text-base font-medium border border-slate-700 hover:bg-zinc-800 hover:border-rose-400 transition-all duration-200"
@@ -150,7 +151,7 @@ export default async function About({ params }: Props) {
           </a>
 
           <a
-            href="https://www.ndamatta.com.ar"
+            href={PORTFOLIO_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-slate-200 text-zinc-900 text-sm sm:text-base font-medium border border-slate-300 hover:bg-slate-300 transition-all duration-200"

@@ -1,5 +1,6 @@
 import { Link } from "@/src/i18n/navigations";
 import { getTranslations } from "next-intl/server";
+import { GITHUB_URL } from "@/src/lib/config";
 
 export default async function Footer() {
   const t = await getTranslations("footer.links");
@@ -18,7 +19,7 @@ export default async function Footer() {
 
       <div className="flex items-center gap-2">
         <p className="text-sm text-zinc-400">©{year}</p>
-        <a href="https://github.com/ndamatta" target="_blank" rel="noopener noreferrer" className="text-sm text-zinc-400 hover:text-zinc-200 transition-colors">
+        <a href={GITHUB_URL} target="_blank" rel="noopener noreferrer" className="text-sm text-zinc-400 hover:text-zinc-200 transition-colors">
           ndamatta
         </a>
       </div>

@@ -1,7 +1,8 @@
 import { MetadataRoute } from "next";
+import { SITE_URL } from "@/src/lib/config";
 
 export default function robots(): MetadataRoute.Robots {
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "https://unfollowz.com";
+  const baseUrl = SITE_URL;
   return {
     rules: {
       userAgent: "*",

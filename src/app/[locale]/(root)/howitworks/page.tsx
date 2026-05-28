@@ -84,8 +84,9 @@ export default async function HowItWorks({ params }: Props) {
           <div className="w-full aspect-video rounded-xl overflow-hidden border border-slate-300">
             <iframe
               className="w-full h-full"
-              src="https://www.youtube.com/embed/asdasd"
+              src="https://www.youtube.com/embed/v_1hdVDTges"
               title={t("howItWorks.videoTitle")}
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             />
           </div>

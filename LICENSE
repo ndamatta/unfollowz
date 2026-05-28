@@ -1,0 +1,16 @@
+Copyright (C) 2026 ndamatta
+
+unfollowz is free software: you can use, study, modify, and redistribute it
+under the terms of the GNU Affero General Public License as published by the
+Free Software Foundation, either version 3 of the License, or (at your option)
+any later version.
+
+If you deploy a modified version of unfollowz publicly (including as a web app),
+you must also make the source code of your modified version available under the
+same AGPL-3.0 license and provide attribution to the original project.
+
+This project is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+PARTICULAR PURPOSE.
+
+For more details, see <https://www.gnu.org/licenses/>.

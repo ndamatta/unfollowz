@@ -35,5 +35,7 @@ There are more features I want to implement, as well as support for more languag
 I'll personally review and work on pull requests.
 
 ## License
+![License](https://img.shields.io/badge/license-AGPL--3.0-blue)
 
-`unfollowz` is licensed under the **GPL-3.0 License**.
+`unfollowz` is licensed under the **GPL-3.0 License**.<br>
+See the [LICENSE](./LICENSE) file for more information.

@@ -9,6 +9,14 @@ export interface ProcessResult {
   notFollowingBack: IGUser[];
 }
 
+function normalizeUsername(username: string): string {
+  return username.toLowerCase().replace(/[._-]/g, "");
+}
+
+function isDeletedAccount(username: string): boolean {
+  return username.startsWith("__deleted__");
+}
+
 function extractUsernameFromHref(href: string): string | null {
   if (!href || typeof href !== "string") return null;
 
@@ -21,91 +29,64 @@ function extractUsernameFromHref(href: string): string | null {
   return clean || null;
 }
 
-function findStringListData(obj: unknown): { value?: string; href?: string }[] {
-  if (Array.isArray(obj)) {
-    for (const item of obj) {
-      if (item && typeof item === "object" && Array.isArray(item.string_list_data)) {
-        return item.string_list_data;
+function extractUsernamesFromEntries(entries: { value?: string; href?: string }[]): string[] {
+  const usernames: string[] = [];
+  for (const entry of entries) {
+    const extracted = entry.value || extractUsernameFromHref(entry.href || "");
+    if (extracted) usernames.push(extracted);
+  }
+  return usernames;
+}
+
+function buildNormalizedSet(usernames: string[]): Set<string> {
+  const normalized = new Set<string>();
+  for (const username of usernames) {
+    if (!isDeletedAccount(username)) {
+      normalized.add(normalizeUsername(username));
+    }
+  }
+  return normalized;
+}
+
+function extractFromFollowerArray(data: unknown[]): string[] {
+  const usernames: string[] = [];
+  for (const item of data) {
+    if (!item || typeof item !== "object") continue;
+    const record = item as Record<string, unknown>;
+    if (Array.isArray(record.string_list_data)) {
+      const entries = record.string_list_data as { value?: string; href?: string }[];
+      for (const entry of entries) {
+        const extracted = entry.value || extractUsernameFromHref(entry.href || "");
+        if (extracted) {
+          usernames.push(extracted);
+          break;
+        }
       }
     }
   }
-
-  if (obj && typeof obj === "object" && !Array.isArray(obj)) {
-    const record = obj as Record<string, unknown>;
-    if (Array.isArray(record.string_list_data)) {
-      return record.string_list_data as { value?: string; href?: string }[];
-    }
-  }
-
-  return [];
+  return usernames;
 }
 
 function extractFollowerUsernames(data: unknown): Set<string> {
-  // Strategy 1: Array of objects with string_list_data[].value
   if (Array.isArray(data)) {
-    const usernames: string[] = [];
-    for (const item of data) {
-      const entries = findStringListData(item);
-      for (const entry of entries) {
-        if (entry.value) {
-          usernames.push(entry.value);
-          break;
-        }
-      }
-    }
-    if (usernames.length > 0) return new Set(usernames);
+    const usernames = extractFromFollowerArray(data);
+    if (usernames.length > 0) return buildNormalizedSet(usernames);
   }
 
-  // Strategy 2: Single object with top-level string_list_data
   if (data && typeof data === "object" && !Array.isArray(data)) {
-    const entries = findStringListData(data);
-    if (entries.length > 0) {
-      const usernames: string[] = [];
-      for (const entry of entries) {
-        if (entry.value) {
-          usernames.push(entry.value);
-        }
-      }
-      if (usernames.length > 0) return new Set(usernames);
+    const record = data as Record<string, unknown>;
+    if (Array.isArray(record.string_list_data)) {
+      const entries = record.string_list_data as { value?: string; href?: string }[];
+      const usernames = extractUsernamesFromEntries(entries);
+      if (usernames.length > 0) return buildNormalizedSet(usernames);
     }
   }
 
-  // Strategy 3: Fall back to extracting from href where value is missing
-  if (Array.isArray(data)) {
-    const usernames: string[] = [];
-    for (const item of data) {
-      const entries = findStringListData(item);
-      for (const entry of entries) {
-        const extracted = entry.value || extractUsernameFromHref(entry.href || "");
-        if (extracted) {
-          usernames.push(extracted);
-          break;
-        }
-      }
-    }
-    if (usernames.length > 0) return new Set(usernames);
-  }
-
-  // Strategy 3b: Single object format, fall back to href
-  if (data && typeof data === "object" && !Array.isArray(data)) {
-    const entries = findStringListData(data);
-    if (entries.length > 0) {
-      const usernames: string[] = [];
-      for (const entry of entries) {
-        const extracted = entry.value || extractUsernameFromHref(entry.href || "");
-        if (extracted) {
-          usernames.push(extracted);
-        }
-      }
-      if (usernames.length > 0) return new Set(usernames);
-    }
-  }
-
-  // Strategy 4: Deep scan for any string_list_data arrays
-  const deepScan = (obj: unknown): { value?: string; href?: string }[] => {
+  const deepScan = (obj: unknown, depth: number): { value?: string; href?: string }[] => {
+    if (depth > 20) return [];
     if (Array.isArray(obj)) {
       for (const item of obj) {
-        const result = deepScan(item);
+        const result = deepScan(item, depth + 1);
         if (result.length > 0) return result;
       }
     } else if (obj && typeof obj === "object") {
@@ -114,21 +95,16 @@ function extractFollowerUsernames(data: unknown): Set<string> {
         return record.string_list_data as { value?: string; href?: string }[];
       }
       for (const val of Object.values(record)) {
-        const result = deepScan(val);
+        const result = deepScan(val, depth + 1);
         if (result.length > 0) return result;
       }
     }
     return [];
   };
 
-  const entries = deepScan(data);
+  const entries = deepScan(data, 0);
   if (entries.length > 0) {
-    const usernames: string[] = [];
-    for (const entry of entries) {
-      const extracted = entry.value || extractUsernameFromHref(entry.href || "");
-      if (extracted) usernames.push(extracted);
-    }
-    if (usernames.length > 0) return new Set(usernames);
+    return buildNormalizedSet(extractUsernamesFromEntries(entries));
   }
 
   throw new Error("Could not extract follower usernames from the provided JSON");
@@ -137,17 +113,14 @@ function extractFollowerUsernames(data: unknown): Set<string> {
 function extractFollowingUsers(data: unknown): IGUser[] {
   let entries: unknown[];
 
-  // Strategy 1: Standard format with relationships_following wrapper
   if (data && typeof data === "object" && !Array.isArray(data)) {
     const record = data as Record<string, unknown>;
     if (Array.isArray(record.relationships_following)) {
       entries = record.relationships_following;
     } else {
-      // Strategy 4: Data itself might be the array (no wrapper)
-      entries = Array.isArray(data) ? data : [];
+      entries = [];
     }
   } else if (Array.isArray(data)) {
-    // Strategy 4: Data is an array directly
     entries = data;
   } else {
     entries = [];
@@ -158,43 +131,35 @@ function extractFollowingUsers(data: unknown): IGUser[] {
   }
 
   const users: IGUser[] = [];
+  const seenNormalized = new Set<string>();
 
   for (const entry of entries) {
     if (!entry || typeof entry !== "object") continue;
     const rec = entry as Record<string, unknown>;
+    let username: string | null = null;
 
-    // Try title first
     if (typeof rec.title === "string" && rec.title) {
-      users.push({
-        username: rec.title,
-        href: `https://www.instagram.com/${rec.title}`,
-      });
-      continue;
-    }
-
-    // Strategy 2: string_list_data[].value
-    if (Array.isArray(rec.string_list_data) && rec.string_list_data.length > 0) {
+      username = rec.title;
+    } else if (Array.isArray(rec.string_list_data) && rec.string_list_data.length > 0) {
       const item = rec.string_list_data[0] as Record<string, unknown>;
       if (typeof item.value === "string" && item.value) {
-        users.push({
-          username: item.value,
-          href: `https://www.instagram.com/${item.value}`,
-        });
-        continue;
-      }
-
-      // Strategy 3: Extract from href
-      if (typeof item.href === "string") {
-        const username = extractUsernameFromHref(item.href);
-        if (username) {
-          users.push({
-            username,
-            href: `https://www.instagram.com/${username}`,
-          });
-          continue;
-        }
+        username = item.value;
+      } else if (typeof item.href === "string") {
+        username = extractUsernameFromHref(item.href);
       }
     }
+
+    if (!username) continue;
+    if (isDeletedAccount(username)) continue;
+
+    const normalized = normalizeUsername(username);
+    if (seenNormalized.has(normalized)) continue;
+    seenNormalized.add(normalized);
+
+    users.push({
+      username: normalized,
+      href: `https://www.instagram.com/${normalized}`,
+    });
   }
 
   if (users.length === 0) {
